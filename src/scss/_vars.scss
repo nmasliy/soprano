@@ -1,0 +1,16 @@
+// base
+:root {
+  --content-width: 1240px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + var(--container-offset) * 2);
+}
+
+$font-family: "Manrope", sans-serif;
+$transition: 0.225s ease-in-out;
+$menu-transition: 0.3s ease-in-out;
+
+// colors
+$bg-color: #14151b;
+$black-color: #13121e;
+$text-color: #41404e;
+$accent-color: #a7c5df;

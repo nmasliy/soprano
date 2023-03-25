@@ -1,0 +1,121 @@
+.equip {
+  padding: 120px 0;
+  background: #f4f8f8;
+
+  &__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    margin-right: 20px;
+    max-width: 950px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    background: rgba(255, 255, 255, 80%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 17px;
+      top: 17px;
+      border-radius: 50%;
+      width: 34px;
+      height: 34px;
+      background: url("../img/arrow-icon.svg") center no-repeat;
+      background-color: $accent-color;
+    }
+
+    &:first-child {
+      border-radius: 16px 0 0 16px;
+    }
+
+    &:last-child {
+      border-radius: 0 16px 16px 0;
+    }
+
+    &:nth-child(even) {
+      border: 1px solid #fff;
+      background: rgba(217, 232, 245, 30%);
+
+      .equip__img {
+        margin-top: auto;
+        margin-bottom: 0;
+
+        img {
+          border-radius: 100px;
+        }
+      }
+    }
+  }
+
+  &__img {
+    margin-bottom: 20px;
+    text-align: center;
+
+    picture {
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__info {
+    padding-left: 12px;
+    font-size: 15px;
+  }
+
+  &__name {
+    margin-bottom: 5px;
+    padding-right: 15px;
+    font-weight: 600;
+    font-size: 17px;
+    color: #13121e;
+  }
+
+  &__country {
+    margin-bottom: 12px;
+    padding-right: 15px;
+    font-size: 13px;
+  }
+
+  &__line {
+    position: absolute;
+
+    &--1 {
+      left: 15px;
+      top: 155px;
+    }
+
+    &--2 {
+      left: 15px;
+      top: 28px;
+    }
+
+    &--3 {
+      left: 15px;
+      top: 155px;
+    }
+
+    &--4 {
+      left: 15px;
+      top: 28px;
+    }
+  }
+}

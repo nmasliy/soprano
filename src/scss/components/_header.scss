@@ -1,0 +1,104 @@
+.header {
+  padding: 14px 0 24px;
+  color: #192c36;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    margin-right: 60px;
+  }
+
+  &__languages {
+    position: relative;
+    margin-right: 40px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 9px;
+      width: 9px;
+      height: 8px;
+      background: url("../img/select-icon.svg") center no-repeat;
+      user-select: none;
+    }
+
+    select {
+      appearance: none;
+      position: relative;
+      z-index: 2;
+      border: none;
+      border-radius: 0;
+      padding: 4px 11px;
+      width: 100%;
+      box-shadow: none;
+      font-weight: 700;
+      font-size: 14px;
+      background: transparent;
+      cursor: pointer;
+    }
+  }
+
+  &__phone {
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+  &__nav {
+    margin-right: 30px;
+    font-size: 14px;
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      @include mr(30px);
+    }
+
+    a {
+      transition: color $transition;
+
+      @include hover {
+        color: $accent-color;
+      }
+    }
+  }
+
+  &__burger {
+    margin-left: 24px;
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    &__nav {
+      font-size: 20px;
+
+      ul {
+        display: block;
+      }
+
+      li {
+        @include mr(0);
+      }
+
+      a {
+        display: block;
+        padding: 12px;
+      }
+    }
+  }
+}
