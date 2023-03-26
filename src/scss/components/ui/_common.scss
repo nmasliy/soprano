@@ -50,31 +50,31 @@
 .section {
   counter-increment: section;
   overflow: hidden;
-}
 
-.section-counter {
-  position: relative;
-  display: flex;
-  align-items: center;
-  font-family: "Prosto One", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1;
-  text-align: center;
-  text-transform: uppercase;
-  color: #222;
+  &__counter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: "Prosto One", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222;
 
-  &::before {
-    content: "(0" counter(section) ")";
-    margin-right: 10px;
-  }
+    &::before {
+      content: "(0" counter(section) ")";
+      margin-right: 10px;
+    }
 
-  &::after {
-    content: "";
-    display: block;
-    width: 27px;
-    height: 12px;
-    background: url("../img/counter-icon.svg") center no-repeat;
+    &::after {
+      content: "";
+      display: block;
+      width: 27px;
+      height: 12px;
+      background: url("../img/counter-icon.svg") center no-repeat;
+    }
   }
 }
 
