@@ -25,7 +25,7 @@ export function initTabs(triggerSelector, parentSelector) {
           parentSelector + '.is-active'
         );
 
-        const id = triggerNode.getAttribute('data-tabs');
+        const id = triggerNode.getAttribute('data-tab');
 
         activeTrigger.classList.remove('is-active');
         activeParent.classList.remove('is-active');
@@ -33,7 +33,7 @@ export function initTabs(triggerSelector, parentSelector) {
         triggerNode.classList.add('is-active');
 
         const newActiveParent = document.querySelector(
-          parentSelector + '[data-tabs="' + id + '"]'
+          parentSelector + '[data-tab="' + id + '"]'
         );
 
         newActiveParent.classList.add('is-active');

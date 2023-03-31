@@ -1,0 +1,261 @@
+.services {
+  padding: 120px 0;
+  color: #fff;
+  background-color: #100f14;
+
+  .section__counter {
+    color: #fff;
+  }
+
+  &__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    margin-right: 10px;
+    max-width: 940px;
+    color: #fff;
+  }
+
+  &__content {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1.55fr;
+  }
+
+  &__left {
+  }
+
+  &__right {
+    border: 1px solid rgba(255, 255, 255, 16%);
+    border-radius: 12px;
+    padding: 30px;
+    background: rgba(246, 249, 250, 8%);
+  }
+
+  &__tabs {
+  }
+
+  &__tab-content {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+
+    &.is-active {
+      display: flex;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 12px;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  &__caption {
+    margin-bottom: 24px;
+    border-left: 4px solid $accent-color;
+    padding-left: 12px;
+    max-width: 613px;
+    color: #d6d6d6;
+
+    b {
+      font-weight: 700;
+    }
+  }
+
+  &__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 24px;
+  }
+
+  &__img {
+    position: relative;
+
+    picture {
+      display: flex;
+    }
+
+    &:first-child {
+      img {
+        border-radius: 10px 0 0 10px;
+      }
+    }
+
+    &:last-child {
+      img {
+        border-radius: 0 10px 10px 0;
+      }
+    }
+  }
+
+  &__img-caption {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+    border-color: #fff;
+    border-radius: 0 8px 8px 0;
+    padding: 4px 16px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #1a1a1a;
+    background: rgba(255, 255, 255, 70%);
+  }
+
+  &__info {
+    p {
+      font-weight: 500;
+      color: #d6d6d6;
+    }
+  }
+
+  &__info-title {
+    margin-bottom: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__steps {
+    counter-reset: steps;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 16px;
+    gap: 10px;
+
+    li {
+      counter-increment: steps;
+      position: relative;
+      border-radius: 12px;
+      padding: 12px 12px 12px 43px;
+      font-size: 13px;
+      background: rgba(244, 248, 248, 10%);
+
+      &::before {
+        content: "0" counter(steps);
+        position: absolute;
+        left: 12px;
+        top: 12px;
+        font-family: "Prosto One", serif;
+        font-size: 14px;
+        color: $accent-color;
+      }
+    }
+
+    &--five {
+      li:first-child {
+        grid-row: span 2;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    border-radius: 12px;
+    padding: 8px;
+    padding-left: 17px;
+    background: rgba(0, 0, 0, 40%);
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding-left: 18px;
+
+    &::before {
+      content: "";
+      display: block;
+      flex-shrink: 0;
+      margin-right: 10px;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      background-color: #ee751a;
+    }
+  }
+
+  &__price-caption {
+    margin-right: 10px;
+  }
+
+  &__price-value {
+    font-family: "Prosto One", serif;
+    font-weight: 400;
+    font-size: 17px;
+
+    span {
+      font-size: 22px;
+    }
+  }
+
+  &__garanty {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    color: #d6d6d6;
+
+    img {
+      margin-right: 13px;
+    }
+
+    b {
+      font-weight: 700;
+    }
+  }
+}
+
+.services-tabs {
+  &__box {
+    margin-bottom: 38px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+  }
+
+  &__icon {
+    @include icon(42px);
+
+    margin-right: 16px;
+  }
+
+  &__title {
+    max-width: 324px;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    margin-bottom: 6px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 8%);
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.is-active {
+      color: $black-color;
+      background-color: $accent-color;
+    }
+  }
+}

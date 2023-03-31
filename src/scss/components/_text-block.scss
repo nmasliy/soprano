@@ -1,0 +1,39 @@
+.text-block {
+  padding: 40px 0;
+
+  h1 {
+    margin-bottom: 30px;
+    font-family: "Prosto One", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.24;
+    color: #08080d;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 40px;
+  }
+
+  li {
+    @include mb(12px);
+  }
+
+  a {
+    color: #65ee;
+  }
+
+  p {
+    margin: 15px 0;
+  }
+
+  b,
+  strong {
+    font-weight: 700;
+  }
+
+  i,
+  em {
+    font-style: italic;
+  }
+}

@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 15px 28px;
   font-weight: 500;
   font-size: 14px;
@@ -67,5 +67,44 @@
     @include hover {
       background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 0L9.18794 6.81206L16 8L9.18794 9.18794L8 16L6.81206 9.18794L0 8L6.81206 6.81206L8 0Z' fill='%2308080D'/%3E%3C/svg%3E%0A");
     }
+  }
+}
+
+.btn-star-accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 12px;
+  padding: 21px 75px 21px 40px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: normal;
+  text-align: center;
+  color: #08080d;
+  background: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5 0L13.5607 11.4393L25 12.5L13.5607 13.5607L12.5 25L11.4393 13.5607L0 12.5L11.4393 11.4393L12.5 0Z' fill='%2308080D'/%3E%3C/svg%3E") center right 40px no-repeat;
+  background-color: $accent-color;
+  transition: $transition;
+  cursor: pointer;
+
+  // @include hover {
+  //   color: #08080d;
+  //   background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5 0L13.5607 11.4393L25 12.5L13.5607 13.5607L12.5 25L11.4393 13.5607L0 12.5L11.4393 11.4393L12.5 0Z' fill='white'/%3E%3C/svg%3E");
+  //   background-color: #f5f9fc;
+  // }
+
+  // /* stylelint-disable-next-line order/order */
+  // &:focus,
+  // &:active {
+  //   color: #08080d;
+  //   background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5 0L13.5607 11.4393L25 12.5L13.5607 13.5607L12.5 25L11.4393 13.5607L0 12.5L11.4393 11.4393L12.5 0Z' fill='white'/%3E%3C/svg%3E");
+  //   background-color: #f5f9fc;
+  // }
+
+  &--sm {
+    padding: 15px 54px 15px 28px;
+    font-size: 14px;
+    background-position: center right 28px;
+    background-size: 16px;
   }
 }
