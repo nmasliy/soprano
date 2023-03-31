@@ -1,0 +1,49 @@
+<div class="modal modal-form" id="modal-form" aria-hidden="true">
+	<div class="modal__wrapper">
+		<div class="modal__inner modal-form__inner">
+			<div class="modal__top-decor"></div>
+			<form class="modal-form__element form" method="post">
+				<h3 class="modal__title">Отримати консультацію</h3>
+				<h5 class="modal__subtitle">Залиште свої дані і найближчим часом ми Вам зателефонуємо </h5>
+				<div class="form__items">
+					<label class="form__item">
+						<input type="text" class="form__input form__input--name" minlength="2" required
+							placeholder="Ваше прізвище та ім’я">
+					</label>
+					<label class="form__item">
+						<input type="tel" minlength="8" class="form__input form__input--tel" required placeholder="Телефон">
+					</label>
+				</div>
+				<button class="form__btn btn-star">Надіслати</button>
+				<div class="form__caption">Натискаючи кнопку «Надіслати» ви&nbsp;даєте згоду на&nbsp;обробку персональних даних
+					відповідно
+					до <a href="policy.html" target="_blank">політики конфіденційності.</a></div>
+			</form>
+			<button class="modal__close" data-modal-close>
+				<span>Закрити</span>
+				@include('../img/close-icon.svg')
+			</button>
+		</div>
+	</div>
+</div>
+<div class="modal modal-thanks" id="modal-thanks" aria-hidden="true">
+	<div class="modal__wrapper">
+		<div class="modal__inner modal-thanks__inner">
+			<div class="modal-thanks__head">
+				<div class="modal-thanks__icon">
+					<picture>
+						<source srcset="img/modal-icon-1.webp 1x, img/modal-icon-1@2x.webp 2x" type="image/webp">
+						<img loading="lazy" src="img/modal-icon-1.png" srcset="img/modal-icon-1.png 1x, img/modal-icon-1@2x.png 2x"
+							width="30" height="30" alt="">
+					</picture>
+				</div>
+				<p>Ваш запит надіслано</p>
+			</div>
+			<h3 class="modal__title">Дякуємо, що довіряєте!</h3>
+			<button class="modal__close" data-modal-close>
+				<span>Закрити</span>
+				@include('../img/close-icon.svg')
+			</button>
+		</div>
+	</div>
+</div>

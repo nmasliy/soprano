@@ -1,0 +1,134 @@
+.modal {
+  $transition: opacity 0.3s ease-out;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: rgba(29, 29, 29, 80%);
+  opacity: 0;
+  transition: $transition;
+  backdrop-filter: blur(7.5px);
+
+  &__wrapper {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    max-height: 92vh;
+  }
+
+  &__inner {
+    position: relative;
+    overflow: auto;
+    margin: auto;
+    border-radius: 16px;
+    padding: 50px 80px;
+    width: 100%;
+    max-width: 552px;
+    max-height: 100%;
+    background: #fff;
+  }
+
+  &__title {
+    margin-bottom: 6px;
+    font-family: "Prosto One", serif;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 1.24;
+    text-align: center;
+    text-transform: uppercase;
+    color: $black-color;
+  }
+
+  &__subtitle {
+    margin: 0 auto 28px;
+    max-width: 290px;
+    text-align: center;
+    color: $black-color;
+  }
+
+  &__top-decor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    font-family: "Prosto One", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222;
+
+    &::before {
+      content: "(00)";
+      margin-right: 10px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 27px;
+      height: 12px;
+      background: url("../img/counter-icon.svg") center no-repeat;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    display: flex;
+    align-items: center;
+    outline: transparent;
+    border: none;
+    box-shadow: none;
+    font-size: 11px;
+    color: #6f6f72;
+    background: 0;
+    transition: border $transition;
+    cursor: pointer;
+
+    span {
+      margin-right: 6px;
+    }
+  }
+
+  &[aria-hidden="true"] {
+    display: none;
+  }
+
+  &[aria-hidden="false"] {
+    display: block;
+  }
+
+  &.is-open {
+    opacity: 1;
+  }
+}
+
+.modal-thanks {
+  &__inner {
+    padding-bottom: 105px;
+  }
+
+  &__head {
+    text-align: center;
+
+    p {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__icon {
+    @include icon(50px);
+
+    margin: 0 auto 14px;
+  }
+}

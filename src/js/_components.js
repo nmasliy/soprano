@@ -4,3 +4,4 @@ import './components/tabs';
 import './components/accordion';
 import './components/modals';
 import './components/sliders';
+import './components/form';

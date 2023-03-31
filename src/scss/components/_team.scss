@@ -1,0 +1,156 @@
+.team {
+  padding: 120px 0;
+  background: url("../img/team-bg.jpg") center / cover no-repeat;
+
+  .section__counter {
+    color: #fff;
+  }
+
+  &__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin: 0 10px 50px 0;
+    color: #fff;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  &__item {
+    overflow: hidden;
+
+    &:nth-child(even) .team__img::after {
+      background-image: url("../img/team-gradient-2.png");
+    }
+
+    @include hover {
+      .team {
+        &__img {
+          &::after {
+            height: 70%;
+            opacity: 1;
+            filter: brightness(1.3);
+          }
+
+          img {
+            transform: scale(1.05);
+          }
+        }
+
+        &__info {
+          transform: translateY(-30px);
+        }
+
+        &__item-inner::after {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+
+  &__item-inner {
+    position: relative;
+    display: block;
+
+    &::after {
+      content: "Записатися";
+      position: absolute;
+      right: 27px;
+      bottom: 16px;
+      z-index: 4;
+      display: inline-block;
+      padding-right: 22px;
+      font-weight: 600;
+      font-size: 14px;
+      color: #f4f4fc;
+      background: url("../img/arrow-right-icon.svg") center right  no-repeat;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: 0.4s;
+    }
+  }
+
+  &__img {
+    position: relative;
+    border-radius: 16px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      z-index: 1;
+      border-radius: 16px;
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(358.03deg, #000 -1.34%, rgba(0, 0, 0, 0%) 79.96%);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      z-index: 2;
+      border-radius: 16px;
+      width: 100%;
+      height: 50%;
+      background: url("../img/team-gradient-1.png") center / cover no-repeat;
+      opacity: 0.8;
+      transition: 0.4s;
+    }
+
+    picture {
+      display: flex;
+      overflow: hidden;
+      border-radius: 16px;
+    }
+
+    img {
+      border-radius: 16px;
+      transition: 0.4s;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    z-index: 3;
+    min-height: 77px;
+    transition: 0.4s;
+  }
+
+  &__name {
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  &__caption {
+    position: relative;
+    padding-left: 20px;
+    font-size: 13px;
+    color: #d6d6d6;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 6px;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      background: #4e7ac7;
+    }
+  }
+}

@@ -14,7 +14,8 @@
   display: none !important; /* stylelint-disable-line declaration-no-important */
 }
 
-.disable-scroll {
+.disable-scroll,
+.overflow-hidden {
   overflow: hidden;
 
   body {
