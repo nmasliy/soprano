@@ -4,8 +4,10 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
     border-radius: 24px;
     padding: 0 50px;
+    height: 640px;
     background: url("../img/certificates-decor.png") bottom left 242px no-repeat;
     background-color: #e9f0f2;
   }
@@ -21,11 +23,56 @@
 
   &__text {
     max-width: 342px;
+    font-weight: 600;
+    font-size: 18px;
   }
 
-  &__images {
+  &__right {
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  &__line {
+    animation: move-down 20s linear infinite;
+
+    &--inverse {
+      animation: move-down 25s linear infinite reverse;
+    }
+
+    @include hover {
+      animation-play-state: paused;
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 20px;
+    max-height: 430px;
+    filter: grayscale(1);
+    transition: filter $transition;
+
     picture {
       display: flex;
     }
+
+    img {
+      border-radius: 16px;
+    }
+
+    @include hover {
+      filter: grayscale(0);
+    }
+  }
+}
+
+@keyframes move-down {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 35%, 0);
   }
 }
