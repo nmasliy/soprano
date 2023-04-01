@@ -1,6 +1,13 @@
 .header {
-  padding: 14px 0 24px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  padding: 15px 0;
+  width: 100%;
   color: #192c36;
+  background: #d9e8f5;
+  transition: background $transition;
 
   &__inner {
     display: flex;
@@ -45,9 +52,23 @@
   }
 
   &__phone {
-    margin-right: 30px;
-    font-weight: 700;
-    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    margin-right: 40px;
+    padding: 3px 0 3px 34px;
+    font-family: "Prosto One", serif;
+    font-weight: 400;
+    line-height: normal;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 24px;
+      height: 24px;
+      background: url("../img/phone-icon.svg") center no-repeat;
+    }
   }
 
   &__nav {
@@ -73,6 +94,14 @@
 
   &__burger {
     margin-left: 24px;
+  }
+
+  &.is-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: rgba(217, 232, 245, 50%);
   }
 
   &__left,
