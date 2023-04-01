@@ -1,4 +1,6 @@
 .equip {
+  $transition: 0.4s ease-out;
+
   padding: 120px 0;
   background: #f4f8f8;
 
@@ -8,6 +10,51 @@
 
   &__title {
     max-width: 950px;
+  }
+
+  &__hover {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    z-index: 2;
+    padding: 45px 34px 20px;
+    width: 100%;
+    height: 100%;
+    background: rgba(239, 246, 250, 70%);
+    opacity: 0;
+    transform: scale(0.98);
+    transition: $transition;
+    will-change: transform, top, opacity;
+    backdrop-filter: blur(10px);
+
+    &-title {
+      margin-bottom: 12px;
+      font-weight: 600;
+      font-size: 17px;
+    }
+
+    li {
+      position: relative;
+      margin-bottom: 10px;
+      padding-left: 16px;
+      font-size: 14px;
+      color: #282730;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 2px;
+        border-radius: 2px;
+        width: 8px;
+        height: 8px;
+        background: #ee751a;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__list {
@@ -20,19 +67,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
     padding: 24px;
     background: rgba(255, 255, 255, 80%);
 
-    &::before {
+    &::before,
+    &::after {
       content: "";
       position: absolute;
       right: 17px;
       top: 17px;
+      z-index: 2;
+      border: 1px solid transparent;
       border-radius: 50%;
       width: 34px;
       height: 34px;
+      transition: $transition;
+    }
+
+    &::before {
       background: url("../img/arrow-icon.svg") center no-repeat;
-      background-color: $accent-color;
+      background-color: #08080d;
+      transform: rotate(0.1deg);
+    }
+
+    &::after {
+      border-color: #000;
+      background: url("../img/arrow-black-icon.svg") center no-repeat;
+      opacity: 0;
     }
 
     &:first-child {
@@ -53,6 +115,26 @@
 
         img {
           border-radius: 100px;
+        }
+      }
+    }
+
+    @include hover {
+      &::before {
+        opacity: 0;
+        transform: rotate(180deg);
+      }
+
+      &::after {
+        opacity: 1;
+        transform: rotate(180deg);
+      }
+
+      .equip {
+        &__hover {
+          top: 0;
+          opacity: 1;
+          transform: scale(1);
         }
       }
     }

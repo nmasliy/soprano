@@ -1,25 +1,23 @@
 .contacts {
-  padding: 50px 0;
+  padding-top: 50px;
 
   &__inner {
     display: grid;
     grid-template-columns: 1.95fr 1fr;
     border: 1px solid #fff;
-    border-radius: 24px;
+    border-radius: 24px 24px 0 0;
     padding: 90px 50px;
     background-color: #e9f0f2;
     gap: 40px;
   }
 
-  &__head {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: 50px;
+  &__title {
+    margin: auto 20px 40px 0;
   }
 
-  &__title {
-    margin-right: 20px;
+  &__info {
+    display: flex;
+    flex-direction: column;
   }
 
   &__map {
@@ -54,11 +52,11 @@
   }
 
   &__desc {
-    @include mb(10px);
+    @include mb(2px);
 
     display: block;
-    font-weight: 500;
-    font-size: 17px;
+    font-weight: 600;
+    font-size: 18px;
     color: #13121e;
   }
 }
