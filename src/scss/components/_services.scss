@@ -225,16 +225,30 @@
     max-width: 324px;
   }
 
-  &__list {
-  }
-
   &__item {
+    position: relative;
     margin-bottom: 6px;
+    border: 1px solid transparent;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 10px 30px 10px 20px;
     background: rgba(255, 255, 255, 8%);
     transition: 0.3s;
     cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      border-radius: 50%;
+      width: 21px;
+      height: 21px;
+      background: url("../img/arrow-right-white-icon.svg") center no-repeat;
+      background-color: #08080d;
+      opacity: 0;
+      transform: translateY(-50%);
+      transition: $transition;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -243,6 +257,22 @@
     &.is-active {
       color: $black-color;
       background-color: $accent-color;
+
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    @include hover {
+      &:not(.is-active) {
+        border-color: #fff;
+        color: #41404e;
+        background-color: #f0f6f9;
+
+        &::after {
+          opacity: 1;
+        }
+      }
     }
   }
 }
