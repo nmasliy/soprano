@@ -2,31 +2,23 @@
   padding: 120px 0;
   background: #d9e8f5;
 
+  &__decor {
+    &--1 {
+      right: 119px;
+      top: -80px;
+    }
+
+    &--2 {
+      right: 42px;
+      top: 16px;
+    }
+  }
+
   &__inner {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1.05fr;
     gap: 60px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      right: 119px;
-      top: -80px;
-      width: 95px;
-      height: 95px;
-      background: url("../img/lead-decor-1.png") center / cover no-repeat;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      right: 42px;
-      top: 16px;
-      width: 63px;
-      height: 63px;
-      background: url("../img/lead-decor-2.png") center / cover no-repeat;
-    }
   }
 
   &__left {

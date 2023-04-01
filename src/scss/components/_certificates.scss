@@ -35,10 +35,10 @@
   }
 
   &__line {
-    animation: move-down 20s linear infinite;
+    animation: move-down 25s linear infinite;
 
     &--inverse {
-      animation: move-down 25s linear infinite reverse;
+      animation: move-down 30s linear infinite reverse;
     }
 
     @include hover {

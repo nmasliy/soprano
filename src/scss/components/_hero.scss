@@ -61,6 +61,8 @@
   }
 
   &__img {
+    position: relative;
+
     picture {
       display: flex;
     }
@@ -68,44 +70,26 @@
     img {
       border-radius: 16px;
     }
+
+    &--main {
+      margin-bottom: 20px;
+    }
   }
 
-  &__img--main {
-    position: relative;
-    margin-bottom: 20px;
-
-    &::before {
-      content: "";
-      position: absolute;
+  &__decor {
+    &--1 {
       left: 50px;
       bottom: 70px;
-      width: 89px;
-      height: 89px;
-      background: url("../img/hero-decor-1.png") center / cover no-repeat;
     }
 
-    &::after {
-      content: "";
-      position: absolute;
+    &--2 {
       right: 38px;
       top: 54px;
-      width: 100px;
-      height: 100px;
-      background: url("../img/hero-decor-2.png") center / cover no-repeat;
     }
-  }
 
-  &__img--decor {
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
+    &--3 {
       right: 40px;
       top: -18px;
-      width: 94px;
-      height: 94px;
-      background: url("../img/hero-decor-3.png") center / cover no-repeat;
     }
   }
 }

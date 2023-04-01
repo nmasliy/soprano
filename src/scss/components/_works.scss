@@ -126,10 +126,6 @@
     color: #9d9d9d;
   }
 
-  &__images {
-    position: relative;
-  }
-
   &__img {
     user-select: none;
 
@@ -146,20 +142,31 @@
 
     &--after {
       position: absolute;
+      clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
       inset: 0;
     }
+  }
+
+  &__images {
+    position: relative;
   }
 
   &__drag {
     &-line {
       position: absolute;
-      left: 0;
-      right: 0;
+      left: 50%;
       z-index: 2;
-      margin: 0 auto;
-      width: 1px;
+      padding: 0 24px;
       height: 100%;
-      background-color: #fff;
+      transform: translateX(-50%);
+
+      &::before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: #fff;
+      }
     }
 
     &-icon {
@@ -200,10 +207,20 @@
     min-width: 57px;
     line-height: 1.9;
     text-align: center;
+    transition: $transition;
+
+    &:first-child {
+      margin-right: 5px;
+    }
 
     &.is-active {
       border-radius: 16px;
       background: #08080d;
+    }
+
+    &.is-current {
+      color: #08080d;
+      background-color: $accent-color;
     }
   }
 }

@@ -131,6 +131,32 @@
   }
 }
 
+.scroll-top {
+  position: fixed;
+  right: 10%;
+  bottom: 40px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: url("../img/arrow-top-icon.svg") center no-repeat;
+  background-color: #08080d;
+  opacity: 0;
+  visibility: hidden;
+  transition: $transition;
+  cursor: pointer;
+
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @include hover {
+    border-color: #fff;
+    filter: invert(1);
+  }
+}
+
 @media screen and (max-width: 1280px) {
 
 }

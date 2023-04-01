@@ -5,4 +5,6 @@ import './components/accordion';
 import './components/modals';
 import './components/sliders';
 import './components/works-block';
+import './components/reviews-block';
 import './components/form';
+import './components/animations';

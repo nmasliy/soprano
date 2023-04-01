@@ -5,7 +5,7 @@
   z-index: 4;
   padding: 15px 0;
   width: 100%;
-  color: #192c36;
+  color: $black-color;
   background: #d9e8f5;
   transition: background $transition;
 
@@ -110,10 +110,31 @@
     }
 
     a {
-      transition: color $transition;
+      position: relative;
+      display: block;
+      transition: $transition;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -12px;
+        top: 50%;
+        border-radius: 50%;
+        width: 6px;
+        height: 6px;
+        background: #ee751a;
+        opacity: 0;
+        transform: translateY(-50%);
+        transition: $transition;
+      }
 
       @include hover {
-        color: $accent-color;
+        // color: #000;
+        text-shadow: 0.5px 0 0 $black-color;
+
+        &::before {
+          opacity: 1;
+        }
       }
     }
   }
