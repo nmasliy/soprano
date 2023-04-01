@@ -1,0 +1,209 @@
+.works {
+  padding: 50px 0;
+  color: #fff;
+
+  &__inner {
+    border-radius: 20px;
+    padding: 90px 50px;
+    background: url("../img/team-bg.jpg") center / cover no-repeat;
+    background-color: rgba(16, 15, 20, 94%);
+  }
+
+  &__head {
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    &.is-active {
+      .works {
+        &__btn-more {
+          display: none;
+        }
+
+        &__btn-modal {
+          display: inline-flex;
+        }
+
+        &__item {
+          &:nth-child(2) ~ .works__item {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  &__btn-modal {
+    display: none;
+  }
+
+  &__title {
+    max-width: 814px;
+    color: #fff;
+  }
+
+  &__list {
+    counter-reset: works;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+    gap: 20px;
+  }
+
+  &__item {
+    counter-increment: works;
+    border: 1px solid rgba(246, 249, 250, 16%);
+    border-radius: 16px;
+    padding: 20px;
+    background: rgba(246, 249, 250, 3%);
+    backdrop-filter: blur(5px);
+
+    &:nth-child(2) ~ .works__item {
+      display: none;
+    }
+  }
+
+  &__item-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+  }
+
+  &__name {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 10px;
+    max-width: 370px;
+    font-weight: 600;
+    font-size: 18px;
+
+    &::before {
+      content: "0" counter(works) "/";
+      margin-right: 18px;
+      font-family: "Prosto One", serif;
+      font-weight: 400;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+
+  &__doctors {
+    display: flex;
+    align-items: center;
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      flex-shrink: 0;
+      border: 1px solid #d9d9d9;
+      border-radius: 50%;
+
+      &:last-child {
+        position: relative;
+        z-index: -1;
+        margin-left: -14px;
+      }
+    }
+
+    picture {
+      display: flex;
+    }
+
+    img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__doctors-caption {
+    margin-right: 10px;
+    font-size: 13px;
+    color: #9d9d9d;
+  }
+
+  &__images {
+    position: relative;
+  }
+
+  &__img {
+    user-select: none;
+
+    img {
+      border-radius: 16px;
+      width: 100%;
+    }
+
+    picture {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    &--after {
+      position: absolute;
+      inset: 0;
+    }
+  }
+
+  &__drag {
+    &-line {
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      margin: 0 auto;
+      width: 1px;
+      height: 100%;
+      background-color: #fff;
+    }
+
+    &-icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 3;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background: url("../img/drag-icon.svg") center no-repeat;
+      background-color: rgba(255, 255, 255, 30%);
+      transform: translate(-50%, -50%);
+      cursor: grab;
+    }
+  }
+
+  &__captions {
+    position: absolute;
+    left: 50%;
+    bottom: 16px;
+    z-index: 4;
+    display: flex;
+    border: 1px solid rgba(8, 8, 13, 20%);
+    border-radius: 22px;
+    padding: 6px;
+    font-size: 13px;
+    color: #fff;
+    background: rgba(8, 8, 13, 40%);
+    transform: translateX(-50%);
+    backdrop-filter: blur(2px);
+  }
+
+  &__captions-item {
+    border-radius: 16px;
+    padding: 2px;
+    min-width: 57px;
+    line-height: 1.9;
+    text-align: center;
+
+    &.is-active {
+      border-radius: 16px;
+      background: #08080d;
+    }
+  }
+}

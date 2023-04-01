@@ -3,14 +3,7 @@
   color: #fff;
   background-color: #100f14;
 
-  .section__counter {
-    color: #fff;
-  }
-
   &__head {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
     margin-bottom: 50px;
   }
 
@@ -26,17 +19,11 @@
     grid-template-columns: 1fr 1.55fr;
   }
 
-  &__left {
-  }
-
   &__right {
     border: 1px solid rgba(255, 255, 255, 16%);
     border-radius: 12px;
     padding: 30px;
     background: rgba(246, 249, 250, 8%);
-  }
-
-  &__tabs {
   }
 
   &__tab-content {

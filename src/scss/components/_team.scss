@@ -2,18 +2,8 @@
   padding: 120px 0;
   background: url("../img/team-bg.jpg") center / cover no-repeat;
 
-  .section__counter {
-    color: #fff;
-  }
-
-  &__head {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-
   &__title {
-    margin: 0 10px 50px 0;
+    margin-bottom: 50px;
     color: #fff;
   }
 

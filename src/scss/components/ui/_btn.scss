@@ -27,11 +27,12 @@
   }
 }
 
-.btn-star {
+.btn-star,
+.btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 12px;
   padding: 21px 75px 21px 40px;
   font-weight: 500;
@@ -56,6 +57,10 @@
     color: #08080d;
     background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5 0L13.5607 11.4393L25 12.5L13.5607 13.5607L12.5 25L11.4393 13.5607L0 12.5L11.4393 11.4393L12.5 0Z' fill='%2308080D'/%3E%3C/svg%3E");
     background-color: #f5f9fc;
+  }
+
+  &--border {
+    border: 1px solid #fff;
   }
 
   &--sm {

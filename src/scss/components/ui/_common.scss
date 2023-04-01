@@ -52,6 +52,13 @@
   counter-increment: section;
   overflow: hidden;
 
+  &__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
   &__counter {
     position: relative;
     display: flex;
@@ -76,6 +83,10 @@
       height: 12px;
       background: url("../img/counter-icon.svg") center no-repeat;
     }
+
+    &--white {
+      color: #fff;
+    }
   }
 }
 
@@ -86,6 +97,10 @@
   line-height: 1.24;
   text-transform: uppercase;
   color: #08080d;
+
+  span {
+    color: #ee751a;
+  }
 }
 
 .overlay {
@@ -104,6 +119,15 @@
 
   &.is-active {
     opacity: 1;
+  }
+}
+
+.decor-icon {
+  position: absolute;
+  transition: transform $transition;
+
+  @include hover {
+    transform: scale(1.05);
   }
 }
 

@@ -36,11 +36,11 @@
         <div class="header__right">
           <a class="header__phone" href="tel:0967555100">+38 096 75 55 100</a>
           <div class="header__languages">
-            <select>
-              <option value="UA">UA</option>
-              <option value="RU">RU</option>
-              <option value="EN">EN</option>
-            </select>
+            <div class="header__languages-current">UA</div>
+            <ul class="header__languages-list">
+              <li><a href="./">RU</a></li>
+              <li><a href="./">EN</a></li>
+            </ul>
           </div>
           <button class="header__btn btn-star btn-star--sm" data-modal-open="modal-form">Отримати консультацію</button>
           <button class="header__burger burger">
@@ -81,7 +81,7 @@
                   width="24" height="24" alt="">
               </picture>
             </div>
-            <div class="hero-benefits__text">Матеріали провідних виробників Німеччини,
+            <div class="hero-benefits__text"><strong>Матеріали провідних виробників</strong> Німеччини,
               США&nbsp;та&nbsp;Швейцарії</div>
           </li>
           <li class="hero-benefits__item">
@@ -137,7 +137,7 @@
   <section class="benefits section" id="benefits">
 	<div class="container container--lg">
 		<div class="benefits__inner">
-			<div class="benefits__head">
+			<div class="benefits__head section__head">
 				<h2 class="benefits__title title">ми ЦІНУЄМО ВАШУ
 					ДОВІРУ ТА ЧАС</h2>
 				<div class="section__counter"></div>
@@ -248,9 +248,9 @@
   <section class="services section" id="services">
 	<div class="container">
 		<div class="services__inner">
-			<div class="services__head">
+			<div class="services__head section__head">
 				<h3 class="services__title title">Допоможемо посміхатися частіше</h3>
-				<div class="section__counter"></div>
+				<div class="section__counter section__counter--white"></div>
 			</div>
 			<div class="services__content">
 				<div class="services__left">
@@ -680,7 +680,7 @@
   <section class="equip section" id="equip">
 	<div class="container">
 		<div class="equip__inner">
-			<div class="equip__head">
+			<div class="equip__head section__head">
 				<h2 class="equip__title title">сучасне сертифіковане
 					обладнання</h2>
 				<div class="section__counter"></div>
@@ -756,7 +756,337 @@
 		</div>
 	</div>
 </section>
-  
+  <section class="works section" id="works">
+	<div class="container container--lg">
+		<div class="works__inner">
+			<div class="works__head section__head">
+				<h3 class="works__title title"><span>ПРИКЛАДИ</span> ПРОФЕСІЙНОЇ РОБОТИ ЛІКАРІВ</h3>
+				<div class="section__counter section__counter--white"></div>
+			</div>
+			<div class="works__content">
+				<ol class="works__list">
+					<li class="works__item">
+						<div class="works__item-head">
+							<div class="works__name">Лікування карієсу 16 зубів та керамічні реставраціі 6 зубів </div>
+							<div class="works__doctors">
+								<div class="works__doctors-caption">Лікарі</div>
+								<ul>
+									<li>
+										<picture>
+											<source srcset="img/works-avatar-1.webp 1x, img/works-avatar-1@2x.webp 2x" type="image/webp">
+											<img loading="lazy" src="img/works-avatar-1.png"
+												srcset="img/works-avatar-1.png 1x, img/works-avatar-1@2x.png 2x" width="40" height="40"
+												alt="фото врача">
+										</picture>
+									</li>
+									<li>
+										<picture>
+											<source srcset="img/works-avatar-2.webp 1x, img/works-avatar-2@2x.webp 2x" type="image/webp">
+											<img loading="lazy" src="img/works-avatar-2.png"
+												srcset="img/works-avatar-2.png 1x, img/works-avatar-2@2x.png 2x" width="40" height="40"
+												alt="фото врача">
+										</picture>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="works__images">
+							<div class="works__controls">
+								<div class="works__drag">
+									<div class="works__drag-icon"></div>
+									<div class="works__drag-line"></div>
+								</div>
+								<div class="works__captions">
+									<div class="works__captions-item is-active">до</div>
+									<div class="works__captions-item">після</div>
+								</div>
+							</div>
+							<div class="works__img works__img--before">
+								<picture>
+									<source srcset="img/works-1.webp 1x, img/works-1@2x.webp 2x" type="image/webp">
+									<img loading="lazy" src="img/works-1.jpg" srcset="img/works-1.jpg 1x, img/works-1@2x.jpg 2x"
+										width="570" height="276" alt="">
+								</picture>
+							</div>
+							<div class="works__img works__img--after">
+								<picture>
+									<source srcset="img/works-2.webp 1x, img/works-2@2x.webp 2x" type="image/webp">
+									<img loading="lazy" src="img/works-2.jpg" srcset="img/works-2.jpg 1x, img/works-2@2x.jpg 2x"
+										width="570" height="276" alt="">
+								</picture>
+							</div>
+						</div>
+					</li>
+					<li class="works__item">
+						<div class="works__item-head">
+							<div class="works__name">Лікування карієсу 16 зубів та керамічні реставраціі 6 зубів </div>
+							<div class="works__doctors">
+								<div class="works__doctors-caption">Лікарі</div>
+								<ul>
+									<li>
+										<picture>
+											<source srcset="img/works-avatar-1.webp 1x, img/works-avatar-1@2x.webp 2x" type="image/webp">
+											<img loading="lazy" src="img/works-avatar-1.png"
+												srcset="img/works-avatar-1.png 1x, img/works-avatar-1@2x.png 2x" width="40" height="40"
+												alt="фото врача">
+										</picture>
+									</li>
+									<li>
+										<picture>
+											<source srcset="img/works-avatar-2.webp 1x, img/works-avatar-2@2x.webp 2x" type="image/webp">
+											<img loading="lazy" src="img/works-avatar-2.png"
+												srcset="img/works-avatar-2.png 1x, img/works-avatar-2@2x.png 2x" width="40" height="40"
+												alt="фото врача">
+										</picture>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="works__images">
+							<div class="works__controls">
+								<div class="works__drag">
+									<div class="works__drag-icon"></div>
+									<div class="works__drag-line"></div>
+								</div>
+								<div class="works__captions">
+									<div class="works__captions-item is-active">до</div>
+									<div class="works__captions-item">після</div>
+								</div>
+							</div>
+							<div class="works__img works__img--before">
+								<picture>
+									<source srcset="img/works-1.webp 1x, img/works-1@2x.webp 2x" type="image/webp">
+									<img loading="lazy" src="img/works-1.jpg" srcset="img/works-1.jpg 1x, img/works-1@2x.jpg 2x"
+										width="570" height="276" alt="">
+								</picture>
+							</div>
+							<div class="works__img works__img--after">
+								<picture>
+									<source srcset="img/works-2.webp 1x, img/works-2@2x.webp 2x" type="image/webp">
+									<img loading="lazy" src="img/works-2.jpg" srcset="img/works-2.jpg 1x, img/works-2@2x.jpg 2x"
+										width="570" height="276" alt="">
+								</picture>
+							</div>
+						</div>
+					</li>
+					<li class="works__item">
+						<div class="works__item-head">
+							<div class="works__name">Лікування карієсу 16 зубів та керамічні реставраціі 6 зубів </div>
+							<div class="works__doctors">
+								<div class="works__doctors-caption">Лікарі</div>
+								<ul>
+									<li>
+										<picture>
+											<source srcset="img/works-avatar-1.webp 1x, img/works-avatar-1@2x.webp 2x" type="image/webp">
+											<img loading="lazy" src="img/works-avatar-1.png"
+												srcset="img/works-avatar-1.png 1x, img/works-avatar-1@2x.png 2x" width="40" height="40"
+												alt="фото врача">
+										</picture>
+									</li>
+									<li>
+										<picture>
+											<source srcset="img/works-avatar-2.webp 1x, img/works-avatar-2@2x.webp 2x" type="image/webp">
+											<img loading="lazy" src="img/works-avatar-2.png"
+												srcset="img/works-avatar-2.png 1x, img/works-avatar-2@2x.png 2x" width="40" height="40"
+												alt="фото врача">
+										</picture>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="works__images">
+							<div class="works__controls">
+								<div class="works__drag">
+									<div class="works__drag-icon"></div>
+									<div class="works__drag-line"></div>
+								</div>
+								<div class="works__captions">
+									<div class="works__captions-item is-active">до</div>
+									<div class="works__captions-item">після</div>
+								</div>
+							</div>
+							<div class="works__img works__img--before">
+								<picture>
+									<source srcset="img/works-1.webp 1x, img/works-1@2x.webp 2x" type="image/webp">
+									<img loading="lazy" src="img/works-1.jpg" srcset="img/works-1.jpg 1x, img/works-1@2x.jpg 2x"
+										width="570" height="276" alt="">
+								</picture>
+							</div>
+							<div class="works__img works__img--after">
+								<picture>
+									<source srcset="img/works-2.webp 1x, img/works-2@2x.webp 2x" type="image/webp">
+									<img loading="lazy" src="img/works-2.jpg" srcset="img/works-2.jpg 1x, img/works-2@2x.jpg 2x"
+										width="570" height="276" alt="">
+								</picture>
+							</div>
+						</div>
+					</li>
+					<li class="works__item">
+						<div class="works__item-head">
+							<div class="works__name">Лікування карієсу 16 зубів та керамічні реставраціі 6 зубів </div>
+							<div class="works__doctors">
+								<div class="works__doctors-caption">Лікарі</div>
+								<ul>
+									<li>
+										<picture>
+											<source srcset="img/works-avatar-1.webp 1x, img/works-avatar-1@2x.webp 2x" type="image/webp">
+											<img loading="lazy" src="img/works-avatar-1.png"
+												srcset="img/works-avatar-1.png 1x, img/works-avatar-1@2x.png 2x" width="40" height="40"
+												alt="фото врача">
+										</picture>
+									</li>
+									<li>
+										<picture>
+											<source srcset="img/works-avatar-2.webp 1x, img/works-avatar-2@2x.webp 2x" type="image/webp">
+											<img loading="lazy" src="img/works-avatar-2.png"
+												srcset="img/works-avatar-2.png 1x, img/works-avatar-2@2x.png 2x" width="40" height="40"
+												alt="фото врача">
+										</picture>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="works__images">
+							<div class="works__controls">
+								<div class="works__drag">
+									<div class="works__drag-icon"></div>
+									<div class="works__drag-line"></div>
+								</div>
+								<div class="works__captions">
+									<div class="works__captions-item is-active">до</div>
+									<div class="works__captions-item">після</div>
+								</div>
+							</div>
+							<div class="works__img works__img--before">
+								<picture>
+									<source srcset="img/works-1.webp 1x, img/works-1@2x.webp 2x" type="image/webp">
+									<img loading="lazy" src="img/works-1.jpg" srcset="img/works-1.jpg 1x, img/works-1@2x.jpg 2x"
+										width="570" height="276" alt="">
+								</picture>
+							</div>
+							<div class="works__img works__img--after">
+								<picture>
+									<source srcset="img/works-2.webp 1x, img/works-2@2x.webp 2x" type="image/webp">
+									<img loading="lazy" src="img/works-2.jpg" srcset="img/works-2.jpg 1x, img/works-2@2x.jpg 2x"
+										width="570" height="276" alt="">
+								</picture>
+							</div>
+						</div>
+					</li>
+					<li class="works__item">
+						<div class="works__item-head">
+							<div class="works__name">Лікування карієсу 16 зубів та керамічні реставраціі 6 зубів </div>
+							<div class="works__doctors">
+								<div class="works__doctors-caption">Лікарі</div>
+								<ul>
+									<li>
+										<picture>
+											<source srcset="img/works-avatar-1.webp 1x, img/works-avatar-1@2x.webp 2x" type="image/webp">
+											<img loading="lazy" src="img/works-avatar-1.png"
+												srcset="img/works-avatar-1.png 1x, img/works-avatar-1@2x.png 2x" width="40" height="40"
+												alt="фото врача">
+										</picture>
+									</li>
+									<li>
+										<picture>
+											<source srcset="img/works-avatar-2.webp 1x, img/works-avatar-2@2x.webp 2x" type="image/webp">
+											<img loading="lazy" src="img/works-avatar-2.png"
+												srcset="img/works-avatar-2.png 1x, img/works-avatar-2@2x.png 2x" width="40" height="40"
+												alt="фото врача">
+										</picture>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="works__images">
+							<div class="works__controls">
+								<div class="works__drag">
+									<div class="works__drag-icon"></div>
+									<div class="works__drag-line"></div>
+								</div>
+								<div class="works__captions">
+									<div class="works__captions-item is-active">до</div>
+									<div class="works__captions-item">після</div>
+								</div>
+							</div>
+							<div class="works__img works__img--before">
+								<picture>
+									<source srcset="img/works-1.webp 1x, img/works-1@2x.webp 2x" type="image/webp">
+									<img loading="lazy" src="img/works-1.jpg" srcset="img/works-1.jpg 1x, img/works-1@2x.jpg 2x"
+										width="570" height="276" alt="">
+								</picture>
+							</div>
+							<div class="works__img works__img--after">
+								<picture>
+									<source srcset="img/works-2.webp 1x, img/works-2@2x.webp 2x" type="image/webp">
+									<img loading="lazy" src="img/works-2.jpg" srcset="img/works-2.jpg 1x, img/works-2@2x.jpg 2x"
+										width="570" height="276" alt="">
+								</picture>
+							</div>
+						</div>
+					</li>
+					<li class="works__item">
+						<div class="works__item-head">
+							<div class="works__name">Лікування карієсу 16 зубів та керамічні реставраціі 6 зубів </div>
+							<div class="works__doctors">
+								<div class="works__doctors-caption">Лікарі</div>
+								<ul>
+									<li>
+										<picture>
+											<source srcset="img/works-avatar-1.webp 1x, img/works-avatar-1@2x.webp 2x" type="image/webp">
+											<img loading="lazy" src="img/works-avatar-1.png"
+												srcset="img/works-avatar-1.png 1x, img/works-avatar-1@2x.png 2x" width="40" height="40"
+												alt="фото врача">
+										</picture>
+									</li>
+									<li>
+										<picture>
+											<source srcset="img/works-avatar-2.webp 1x, img/works-avatar-2@2x.webp 2x" type="image/webp">
+											<img loading="lazy" src="img/works-avatar-2.png"
+												srcset="img/works-avatar-2.png 1x, img/works-avatar-2@2x.png 2x" width="40" height="40"
+												alt="фото врача">
+										</picture>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="works__images">
+							<div class="works__controls">
+								<div class="works__drag">
+									<div class="works__drag-icon"></div>
+									<div class="works__drag-line"></div>
+								</div>
+								<div class="works__captions">
+									<div class="works__captions-item is-active">до</div>
+									<div class="works__captions-item">після</div>
+								</div>
+							</div>
+							<div class="works__img works__img--before">
+								<picture>
+									<source srcset="img/works-1.webp 1x, img/works-1@2x.webp 2x" type="image/webp">
+									<img loading="lazy" src="img/works-1.jpg" srcset="img/works-1.jpg 1x, img/works-1@2x.jpg 2x"
+										width="570" height="276" alt="">
+								</picture>
+							</div>
+							<div class="works__img works__img--after">
+								<picture>
+									<source srcset="img/works-2.webp 1x, img/works-2@2x.webp 2x" type="image/webp">
+									<img loading="lazy" src="img/works-2.jpg" srcset="img/works-2.jpg 1x, img/works-2@2x.jpg 2x"
+										width="570" height="276" alt="">
+								</picture>
+							</div>
+						</div>
+					</li>
+				</ol>
+				<div class="text-center">
+					<button class="works__btn-more btn--border btn-star btn-star-sm">Дивитися більше</button>
+					<button class="works__btn-modal btn--border btn-star btn-star-sm" data-modal-open="modal-form">Отримати
+						консультацію</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
   <section class="reviews section" id="reviews">
 	<div class="container">
 		<div class="reviews__inner">
@@ -874,9 +1204,9 @@
   <section class="team section" id="team">
 	<div class="container">
 		<div class="team__inner">
-			<div class="team__head">
+			<div class="team__head section__head">
 				<h3 class="team__title title">КОМАНДА <br> ДОСВІДЧЕНИХ ЛІКАРІВ</h3>
-				<div class="section__counter"></div>
+				<div class="section__counter section__counter--white"></div>
 			</div>
 			<ul class="team__list">
 				<li class="team__item">
