@@ -10,7 +10,11 @@
   }
 
   &__head {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
+
+    .section__counter {
+      margin-top: 30px;
+    }
   }
 
   &__content {

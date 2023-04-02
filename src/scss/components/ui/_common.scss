@@ -57,6 +57,10 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 16px;
+
+    .section__counter {
+      margin-top: 13px;
+    }
   }
 
   &__counter {
@@ -86,6 +90,12 @@
 
     &--white {
       color: #fff;
+    }
+  }
+
+  &:nth-child(9) ~ .section {
+    .section__counter::before {
+      content: "(" counter(section) ")";
     }
   }
 }
@@ -127,7 +137,7 @@
   transition: transform $transition;
 
   @include hover {
-    transform: scale(1.05);
+    transform: scale(0.95);
   }
 }
 

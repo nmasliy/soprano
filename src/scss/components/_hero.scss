@@ -17,6 +17,10 @@
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #08080d;
+
+    span {
+      color: #ee751a;
+    }
   }
 
   &__left {
@@ -101,7 +105,7 @@
   border-radius: 16px;
   padding: 28px;
   background: rgba(255, 255, 255, 70%);
-  gap: 14px 28px;
+  gap: 14px;
 
   &__item {
     display: flex;

@@ -1,16 +1,16 @@
 .lead {
   padding: 120px 0;
-  background: #d9e8f5;
+  background: #100f14;
 
   &__decor {
     &--1 {
-      right: 119px;
+      right: 142px;
       top: -80px;
     }
 
     &--2 {
-      right: 42px;
-      top: 16px;
+      right: 64px;
+      top: 8px;
     }
   }
 
@@ -48,7 +48,9 @@
   }
 
   &__title {
-    margin: 40px 0;
+    margin: 47px 0;
     font-size: 40px;
+    line-height: 1.34;
+    color: #fff;
   }
 }
