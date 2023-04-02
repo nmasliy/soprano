@@ -22,11 +22,11 @@
     right: -43px;
     top: 50%;
     border-radius: 50%;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     background: #08080d;
     transform: translate3d(0, -50%, 0);
-    transform-origin: 101% 50%;
+    transform-origin: 100% 50%;
     transition: 0.3s cubic-bezier(0, 0, 0.215, 0.975);
   }
 
@@ -151,6 +151,47 @@
     }
   }
 
+  &--transparent {
+    .btn {
+      &__wrapper {
+        background-color: transparent;
+      }
+
+      &__inner-text {
+        color: #08080d;
+      }
+
+      &__hover-text {
+        color: #fff;
+      }
+    }
+
+    &::before {
+      background-color: transparent;
+    }
+
+    &:focus,
+    &:active {
+      .btn__wrapper {
+        background-color: #08080d;
+      }
+
+      &::before {
+        background-color: #08080d;
+      }
+    }
+
+    @include hover {
+      .btn__wrapper {
+        background-color: #08080d;
+      }
+
+      &::before {
+        background-color: #08080d;
+      }
+    }
+  }
+
   &--sm {
     font-size: 14px;
 
@@ -207,5 +248,46 @@
     &::before {
       background-color: $accent-color;
     }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .btn--sm .btn__wrapper {
+    padding: 19px 28px;
+  }
+
+  .btn {
+    font-size: 14px;
+
+    &__wrapper {
+      padding: 19px 28px;
+    }
+
+    &__inner img {
+      width: 15px;
+    }
+
+    &__hover img {
+      width: 12px;
+    }
+
+    &:focus,
+    &:active {
+      &::before {
+        transform: translate3d(-75px, -50%, 0) scale(0);
+      }
+    }
+
+    @include hover {
+      &::before {
+        transform: translate3d(-75px, -50%, 0) scale(0);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .btn {
+    width: 100%;
   }
 }

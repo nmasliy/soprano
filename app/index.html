@@ -15,65 +15,33 @@
 </head>
 
 <body>
-  <div class="sections-wrapper">
-    <section class="hero section" id="hero">
+
   <header class="header">
   <div class="container">
-    <div class="menu">
-      <div class="header__inner">
-        <div class="header__left">
-          <a class="header__logo" href="./">
-            <img src="img/logo.png" width="116" height="40" alt="Soprano logo">
-          </a>
-          <nav class="header__nav nav">
-            <ul>
-              <li><a href="#benefits">Послуги</a></li>
-              <li><a href="#works">Кейси</a></li>
-              <li><a href="#team">Команда</a></li>
-              <li><a href="#contacts">Контакти</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header__right">
-          <a class="header__phone" href="tel:0967555100">+38 096 75 55 100</a>
-          <div class="header__languages">
-            <div class="header__languages-current">UA</div>
-            <ul class="header__languages-list">
-              <li><a href="./">RU</a></li>
-              <li><a href="./">EN</a></li>
-            </ul>
-          </div>
-          <button class="header__btn btn btn--sm" data-modal-open="modal-form">
-            <span class="btn__wrapper">
-              <span class="btn__container">
-                <span class="btn__inner">
-                  <span class="btn__inner-text">Отримати консультацію</span>
-                  <img src="img/star-icon.svg" width="21" height="21" alt="">
-                </span>
-                <span class="btn__hover">
-                  <span class="btn__hover-text">Отримати консультацію</span>
-                  <img src="img/arrow-btn-icon.svg" width="17" height="14" alt="">
-                </span>
-              </span>
-            </span>
-          </button>
-          <button class="header__burger burger">
-            <span class="burger__line"></span>
-          </button>
-        </div>
+    <div class="header__inner">
+      <div class="header__left">
+        <a class="header__logo" href="./">
+          <img src="img/logo.png" width="116" height="40" alt="Soprano logo">
+        </a>
+        <nav class="header__nav nav">
+          <ul>
+            <li><a href="#benefits">Послуги</a></li>
+            <li><a href="#works">Кейси</a></li>
+            <li><a href="#team">Команда</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </div>
-  <div class="overlay"></div>
-</header>
-  <div class="container">
-    <div class="hero__inner">
-      <div class="hero__left">
-        <h1 class="hero__title"><span>Безболісне лікування,</span>
-          імплантація, чистка
-          і&nbsp;вирівнювання зубів</h1>
-        <p class="hero__text">Спеціалісти з досвідом більше 10 років</p>
-        <button class="hero__btn btn" data-modal-open="modal-form">
+      <div class="header__right">
+        <a class="header__phone" href="tel:0967555100">+38 096 75 55 100</a>
+        <div class="header__languages">
+          <div class="header__languages-current">UA</div>
+          <ul class="header__languages-list">
+            <li><a href="./">RU</a></li>
+            <li><a href="./">EN</a></li>
+          </ul>
+        </div>
+        <button class="header__btn btn btn--sm" data-modal-open="modal-form">
           <span class="btn__wrapper">
             <span class="btn__container">
               <span class="btn__inner">
@@ -87,55 +55,51 @@
             </span>
           </span>
         </button>
-
-        <ul class="hero__benefits hero-benefits">
-          <li class="hero-benefits__item">
-            <div class="hero-benefits__icon">
-              <picture>
-                <source srcset="img/hero-icon-1.webp 1x, img/hero-icon-1@2x.webp 2x" type="image/webp">
-                <img loading="lazy" src="img/hero-icon-1.png" srcset="img/hero-icon-1.png 1x, img/hero-icon-1@2x.png 2x"
-                  width="24" height="24" alt="">
-              </picture>
-            </div>
-            <div class="hero-benefits__text">Антистресс <br>
-              <strong>стоматологія без болю</strong>
-            </div>
-          </li>
-          <li class="hero-benefits__item">
-            <div class="hero-benefits__icon">
-              <picture>
-                <source srcset="img/hero-icon-2.webp 1x, img/hero-icon-2@2x.webp 2x" type="image/webp">
-                <img loading="lazy" src="img/hero-icon-2.png" srcset="img/hero-icon-2.png 1x, img/hero-icon-2@2x.png 2x"
-                  width="24" height="24" alt="">
-              </picture>
-            </div>
-            <div class="hero-benefits__text"><strong>Матеріали провідних виробників</strong> Німеччини,
-              США&nbsp;та&nbsp;Швейцарії</div>
-          </li>
-          <li class="hero-benefits__item">
-            <div class="hero-benefits__icon">
-              <picture>
-                <source srcset="img/hero-icon-3.webp 1x, img/hero-icon-3@2x.webp 2x" type="image/webp">
-                <img loading="lazy" src="img/hero-icon-3.png" srcset="img/hero-icon-3.png 1x, img/hero-icon-3@2x.png 2x"
-                  width="24" height="24" alt="">
-              </picture>
-            </div>
-            <div class="hero-benefits__text">Зручне місце <br> розташування</div>
-          </li>
-          <li class="hero-benefits__item">
-            <div class="hero-benefits__icon">
-              <picture>
-                <source srcset="img/hero-icon-4.webp 1x, img/hero-icon-4@2x.webp 2x" type="image/webp">
-                <img loading="lazy" src="img/hero-icon-4.png" srcset="img/hero-icon-4.png 1x, img/hero-icon-4@2x.png 2x"
-                  width="24" height="24" alt="">
-              </picture>
-            </div>
-            <div class="hero-benefits__text">Онлайн підтримка 24/7</div>
-          </li>
-        </ul>
+        <button class="burger">
+          <span class="burger__line"></span>
+        </button>
       </div>
-      <div class="hero__right">
-        <div class="hero__img hero__img--main">
+      <div class="menu">
+        <nav class="menu__nav nav">
+          <ul>
+            <li><a href="#benefits">Послуги</a></li>
+            <li><a href="#works">Кейси</a></li>
+            <li><a href="#team">Команда</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="overlay"></div>
+</header>
+  <div class="sections-wrapper">
+    <section class="hero section" id="hero">
+  <div class="container">
+    <div class="hero__inner">
+      <div class="hero__box">
+        <h1 class="hero__title"><span class="color-orange">Безболісне лікування</span><span
+            class="color-orange hide-tablet">,</span><span class="show-tablet"> зубiв,</span>
+          імплантація, чистка
+          і&nbsp;вирівнювання <span class="hide-tablet">зубів</span></h1>
+        <p class="hero__text">Спеціалісти з досвідом більше 10 років</p>
+        <button class="hero__btn btn hide-tablet" data-modal-open="modal-form">
+          <span class="btn__wrapper">
+            <span class="btn__container">
+              <span class="btn__inner">
+                <span class="btn__inner-text">Отримати консультацію</span>
+                <img src="img/star-icon.svg" width="21" height="21" alt="">
+              </span>
+              <span class="btn__hover">
+                <span class="btn__hover-text">Отримати консультацію</span>
+                <img src="img/arrow-btn-icon.svg" width="17" height="14" alt="">
+              </span>
+            </span>
+          </span>
+        </button>
+      </div>
+      <div class="hero__box">
+        <div class="hero__img">
           <div class="hero__decor--1 decor-icon">
             <picture>
               <source srcset="img/hero-decor-1.webp 1x, img/hero-decor-1@2x.webp 2x" type="image/webp">
@@ -150,12 +114,87 @@
                 srcset="img/hero-decor-2.png 1x, img/hero-decor-2@2x.png 2x" width="100" height="100" alt="">
             </picture>
           </div>
+          <div class="hero__decor--3 decor-icon show-tablet-block">
+            <picture>
+              <source srcset="img/hero-decor-3.webp 1x, img/hero-decor-3@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/hero-decor-3.png"
+                srcset="img/hero-decor-3.png 1x, img/hero-decor-3@2x.png 2x" width="60" height="60" alt="">
+            </picture>
+          </div>
           <picture>
             <source srcset="img/hero-1.webp 1x, img/hero-1@2x.webp 2x" type="image/webp">
             <img loading="lazy" src="img/hero-1.jpg" srcset="img/hero-1.jpg 1x, img/hero-1@2x.jpg 2x" width="611"
               height="483" alt="Main image">
           </picture>
         </div>
+      </div>
+      <div class="hero__box">
+        <div class="hero__benefits-wrapper">
+          <ul class="hero__benefits hero-benefits">
+            <li class="hero-benefits__item">
+              <div class="hero-benefits__icon">
+                <picture>
+                  <source srcset="img/hero-icon-1.webp 1x, img/hero-icon-1@2x.webp 2x" type="image/webp">
+                  <img loading="lazy" src="img/hero-icon-1.png"
+                    srcset="img/hero-icon-1.png 1x, img/hero-icon-1@2x.png 2x" width="24" height="24" alt="">
+                </picture>
+              </div>
+              <div class="hero-benefits__text">Антистресс <br>
+                <strong>стоматологія без болю</strong>
+              </div>
+            </li>
+            <li class="hero-benefits__item">
+              <div class="hero-benefits__icon">
+                <picture>
+                  <source srcset="img/hero-icon-2.webp 1x, img/hero-icon-2@2x.webp 2x" type="image/webp">
+                  <img loading="lazy" src="img/hero-icon-2.png"
+                    srcset="img/hero-icon-2.png 1x, img/hero-icon-2@2x.png 2x" width="24" height="24" alt="">
+                </picture>
+              </div>
+              <div class="hero-benefits__text"><strong>Матеріали провідних виробників</strong> Німеччини,
+                США&nbsp;та&nbsp;Швейцарії</div>
+            </li>
+            <li class="hero-benefits__item">
+              <div class="hero-benefits__icon">
+                <picture>
+                  <source srcset="img/hero-icon-3.webp 1x, img/hero-icon-3@2x.webp 2x" type="image/webp">
+                  <img loading="lazy" src="img/hero-icon-3.png"
+                    srcset="img/hero-icon-3.png 1x, img/hero-icon-3@2x.png 2x" width="24" height="24" alt="">
+                </picture>
+              </div>
+              <div class="hero-benefits__text">Зручне місце <br> розташування</div>
+            </li>
+            <li class="hero-benefits__item">
+              <div class="hero-benefits__icon">
+                <picture>
+                  <source srcset="img/hero-icon-4.webp 1x, img/hero-icon-4@2x.webp 2x" type="image/webp">
+                  <img loading="lazy" src="img/hero-icon-4.png"
+                    srcset="img/hero-icon-4.png 1x, img/hero-icon-4@2x.png 2x" width="24" height="24" alt="">
+                </picture>
+              </div>
+              <div class="hero-benefits__text">Онлайн підтримка 24/7</div>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center show-tablet-block">
+          <button class="hero__btn btn" data-modal-open="modal-form">
+            <span class="btn__wrapper">
+              <span class="btn__container">
+                <span class="btn__inner">
+                  <span class="btn__inner-text">Отримати консультацію</span>
+                  <img src="img/star-icon.svg" width="21" height="21" alt="">
+                </span>
+                <span class="btn__hover">
+                  <span class="btn__hover-text">Отримати консультацію</span>
+                  <img src="img/arrow-btn-icon.svg" width="17" height="14" alt="">
+                </span>
+              </span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero__box">
         <div class="hero__images">
           <div class="hero__img">
             <picture>
@@ -164,8 +203,8 @@
                 height="172" alt="hero image">
             </picture>
           </div>
-          <div class="hero__img hero__img--decor">
-            <div class="hero__decor--3 decor-icon">
+          <div class="hero__img">
+            <div class="hero__decor--3 decor-icon hide-tablet">
               <picture>
                 <source srcset="img/hero-decor-3.webp 1x, img/hero-decor-3@2x.webp 2x" type="image/webp">
                 <img loading="lazy" src="img/hero-decor-3.png"
@@ -187,7 +226,7 @@
 	<div class="container container--lg">
 		<div class="benefits__inner">
 			<div class="benefits__head section__head">
-				<h2 class="benefits__title title">ми ЦІНУЄМО ВАШУ
+				<h2 class="benefits__title section__title">ми ЦІНУЄМО ВАШУ
 					ДОВІРУ ТА ЧАС</h2>
 				<div class="section__counter"></div>
 			</div>
@@ -291,15 +330,31 @@
 					</div>
 				</div>
 			</div>
+			<div class="text-center show-tablet-block">
+				<button class="benefits__btn btn btn--transparent">
+					<span class="btn__wrapper">
+						<span class="btn__container">
+							<span class="btn__inner">
+								<span class="btn__inner-text">Дивитися більше</span>
+								<img src="img/star-black-icon.svg" width="15" height="15" alt="">
+							</span>
+							<span class="btn__hover">
+								<span class="btn__hover-text">Дивитися більше</span>
+								<img src="img/arrow-btn-white-icon.svg" width="17" height="14" alt="">
+							</span>
+						</span>
+					</span>
+				</button>
+			</div>
 		</div>
 	</div>
 </section>
-    <section class="services section" id="services">
+    <section class="services section section--head-white" id="services">
 	<div class="container">
 		<div class="services__inner">
 			<div class="services__head section__head">
-				<h3 class="services__title title">Допоможемо посміхатися частіше</h3>
-				<div class="section__counter section__counter--white"></div>
+				<h3 class="services__title section__title">Допоможемо посміхатися частіше</h3>
+				<div class="section__counter"></div>
 			</div>
 			<div class="services__content">
 				<div class="services__left">
@@ -317,9 +372,15 @@
 								<div class="services-tabs__title">Профілактика та&nbsp;лікування зубів</div>
 							</div>
 							<ul class="services-tabs__list">
-								<li class="services-tabs__item is-active" data-tab="1">Професійне чищення зубів</li>
-								<li class="services-tabs__item" data-tab="2">Лікування карієсу та&nbsp;каналів</li>
-								<li class="services-tabs__item" data-tab="3"> Відбілювання зубів</li>
+								<li class="services-tabs__item is-active" data-tab="1">
+									<div class="services-tabs__name">Професійне чищення зубів</div>
+								</li>
+								<li class="services-tabs__item" data-tab="2">
+									<div class="services-tabs__name">Лікування карієсу та&nbsp;каналів</div>
+								</li>
+								<li class="services-tabs__item" data-tab="3">
+									<div class="services-tabs__name">Відбілювання зубів</div>
+								</li>
 							</ul>
 						</div>
 						<div class="services-tabs__box">
@@ -336,10 +397,18 @@
 									та&nbsp;кольору&nbsp;зубів</div>
 							</div>
 							<ul class="services-tabs__list">
-								<li class="services-tabs__item" data-tab="4">Протезування зубів</li>
-								<li class="services-tabs__item" data-tab="5">Керамічні вініри</li>
-								<li class="services-tabs__item" data-tab="6">Безболісне видалення зубів мудрості</li>
-								<li class="services-tabs__item" data-tab="7">Пародонтологія</li>
+								<li class="services-tabs__item" data-tab="4">
+									<div class="services-tabs__name">Протезування зубів</div>
+								</li>
+								<li class="services-tabs__item" data-tab="5">
+									<div class="services-tabs__name">Керамічні вініри</div>
+								</li>
+								<li class="services-tabs__item" data-tab="6">
+									<div class="services-tabs__name">Безболісне видалення зубів мудрості</div>
+								</li>
+								<li class="services-tabs__item" data-tab="7">
+									<div class="services-tabs__name">Пародонтологія</div>
+								</li>
 							</ul>
 						</div>
 						<div class="services-tabs__box">
@@ -355,8 +424,12 @@
 								<div class="services-tabs__title">Вирівнювання зубів</div>
 							</div>
 							<ul class="services-tabs__list">
-								<li class="services-tabs__item" data-tab="8">Елайнери</li>
-								<li class="services-tabs__item" data-tab="9">Брекети</li>
+								<li class="services-tabs__item" data-tab="8">
+									<div class="services-tabs__name">Елайнери</div>
+								</li>
+								<li class="services-tabs__item" data-tab="9">
+									<div class="services-tabs__name">Брекети</div>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -376,11 +449,11 @@
 								</picture>
 							</div>
 							<div class="services__img">
-								<div class="services__img-caption">После</div>
+								<div class="services__img-caption">Пiсля</div>
 								<picture>
 									<source srcset="img/services-2.webp 1x, img/services-2@2x.webp 2x" type="image/webp">
 									<img loading="lazy" src="img/services-2.jpg" srcset="img/services-2.jpg 1x, img/services-2@2x.jpg 2x"
-										width="338" height="175" alt="Фото после">
+										width="338" height="175" alt="Фото Пiсля">
 								</picture>
 							</div>
 						</div>
@@ -433,11 +506,11 @@
 								</picture>
 							</div>
 							<div class="services__img">
-								<div class="services__img-caption">После</div>
+								<div class="services__img-caption">Пiсля</div>
 								<picture>
 									<source srcset="img/services-2.webp 1x, img/services-2@2x.webp 2x" type="image/webp">
 									<img loading="lazy" src="img/services-2.jpg" srcset="img/services-2.jpg 1x, img/services-2@2x.jpg 2x"
-										width="338" height="175" alt="Фото после">
+										width="338" height="175" alt="Фото Пiсля">
 								</picture>
 							</div>
 						</div>
@@ -454,7 +527,10 @@
 							</ol>
 						</div>
 						<div class="services__footer">
-							<div class="services__price">Ціна: <span>2500 грн</span></div>
+							<div class="services__price">
+								<div class="services__price-caption">Ціна:</div>
+								<div class="services__price-value">від <span>2500</span> грн</div>
+							</div>
 							<button class="services__btn btn btn--accent btn--sm" data-modal-open="modal-form">
 								<span class="btn__wrapper">
 									<span class="btn__container">
@@ -485,11 +561,11 @@
 								</picture>
 							</div>
 							<div class="services__img">
-								<div class="services__img-caption">После</div>
+								<div class="services__img-caption">Пiсля</div>
 								<picture>
 									<source srcset="img/services-2.webp 1x, img/services-2@2x.webp 2x" type="image/webp">
 									<img loading="lazy" src="img/services-2.jpg" srcset="img/services-2.jpg 1x, img/services-2@2x.jpg 2x"
-										width="338" height="175" alt="Фото после">
+										width="338" height="175" alt="Фото Пiсля">
 								</picture>
 							</div>
 						</div>
@@ -546,11 +622,11 @@
 								</picture>
 							</div>
 							<div class="services__img">
-								<div class="services__img-caption">После</div>
+								<div class="services__img-caption">Пiсля</div>
 								<picture>
 									<source srcset="img/services-2.webp 1x, img/services-2@2x.webp 2x" type="image/webp">
 									<img loading="lazy" src="img/services-2.jpg" srcset="img/services-2.jpg 1x, img/services-2@2x.jpg 2x"
-										width="338" height="175" alt="Фото после">
+										width="338" height="175" alt="Фото Пiсля">
 								</picture>
 							</div>
 						</div>
@@ -590,11 +666,11 @@
 								</picture>
 							</div>
 							<div class="services__img">
-								<div class="services__img-caption">После</div>
+								<div class="services__img-caption">Пiсля</div>
 								<picture>
 									<source srcset="img/services-2.webp 1x, img/services-2@2x.webp 2x" type="image/webp">
 									<img loading="lazy" src="img/services-2.jpg" srcset="img/services-2.jpg 1x, img/services-2@2x.jpg 2x"
-										width="338" height="175" alt="Фото после">
+										width="338" height="175" alt="Фото Пiсля">
 								</picture>
 							</div>
 						</div>
@@ -642,11 +718,11 @@
 								</picture>
 							</div>
 							<div class="services__img">
-								<div class="services__img-caption">После</div>
+								<div class="services__img-caption">Пiсля</div>
 								<picture>
 									<source srcset="img/services-2.webp 1x, img/services-2@2x.webp 2x" type="image/webp">
 									<img loading="lazy" src="img/services-2.jpg" srcset="img/services-2.jpg 1x, img/services-2@2x.jpg 2x"
-										width="338" height="175" alt="Фото после">
+										width="338" height="175" alt="Фото Пiсля">
 								</picture>
 							</div>
 						</div>
@@ -660,7 +736,7 @@
 									на&nbsp;інші&nbsp;зуби;</li>
 								<li>Хронічна травма
 									щоки&nbsp;або&nbsp;язика;</li>
-								<li>Зуб почав <br>
+								<li>Зуб почав <div class="hide-tablet"></div>
 									руйнуватися;</li>
 								<li>Плануєте
 									вирівнювати&nbsp;зуби</li>
@@ -702,11 +778,11 @@
 								</picture>
 							</div>
 							<div class="services__img">
-								<div class="services__img-caption">После</div>
+								<div class="services__img-caption">Пiсля</div>
 								<picture>
 									<source srcset="img/services-2.webp 1x, img/services-2@2x.webp 2x" type="image/webp">
 									<img loading="lazy" src="img/services-2.jpg" srcset="img/services-2.jpg 1x, img/services-2@2x.jpg 2x"
-										width="338" height="175" alt="Фото после">
+										width="338" height="175" alt="Фото Пiсля">
 								</picture>
 							</div>
 						</div>
@@ -757,11 +833,11 @@
 								</picture>
 							</div>
 							<div class="services__img">
-								<div class="services__img-caption">После</div>
+								<div class="services__img-caption">Пiсля</div>
 								<picture>
 									<source srcset="img/services-2.webp 1x, img/services-2@2x.webp 2x" type="image/webp">
 									<img loading="lazy" src="img/services-2.jpg" srcset="img/services-2.jpg 1x, img/services-2@2x.jpg 2x"
-										width="338" height="175" alt="Фото после">
+										width="338" height="175" alt="Фото Пiсля">
 								</picture>
 							</div>
 						</div>
@@ -801,11 +877,11 @@
 								</picture>
 							</div>
 							<div class="services__img">
-								<div class="services__img-caption">После</div>
+								<div class="services__img-caption">Пiсля</div>
 								<picture>
 									<source srcset="img/services-2.webp 1x, img/services-2@2x.webp 2x" type="image/webp">
 									<img loading="lazy" src="img/services-2.jpg" srcset="img/services-2.jpg 1x, img/services-2@2x.jpg 2x"
-										width="338" height="175" alt="Фото после">
+										width="338" height="175" alt="Фото Пiсля">
 								</picture>
 							</div>
 						</div>
@@ -848,139 +924,147 @@
 	<div class="container">
 		<div class="equip__inner">
 			<div class="equip__head section__head">
-				<h2 class="equip__title title">сучасне сертифіковане
+				<h2 class="equip__title section__title">сучасне сертифіковане
 					обладнання</h2>
 				<div class="section__counter"></div>
 			</div>
-			<ul class="equip__list">
-				<li class="equip__item">
-					<div class="equip__hover">
-						<div class="equip__hover-title">Характеристики:</div>
-						<ul>
-							<li>делікатна робота апарату гарантує збереження кісткової тканини;</li>
-							<li>мінімізує післяопераційний біль
-								за рахунок розрізу без тиску;</li>
-							<li>має спеціальну насадку,
-								яка запобігає пошкодженню
-								м’яких тканин;</li>
-							<li>забезпечує точний розріз
-								у необхідному місці.</li>
-						</ul>
-					</div>
-					<div class="equip__img">
-						<picture>
-							<source srcset="img/equip-1.webp 1x, img/equip-1@2x.webp 2x" type="image/webp">
-							<img loading="lazy" src="img/equip-1.jpg" srcset="img/equip-1.jpg 1x, img/equip-1@2x.jpg 2x" width="196"
-								height="196" alt="">
-						</picture>
-					</div>
-					<div class="equip__info">
-						<div class="equip__name">PIEZOTOME® CUBE (LED)</div>
-						<div class="equip__country">ACTEON (Англія)</div>
-						<div class="equip__text">Використовується при операціях з видалення зубів, виправлення прикусу, синус
-							ліфтингу та реконструкції кістки.</div>
-					</div>
-					<div class="equip__line equip__line--1"><img src="img/equip-line-1.svg" width="79" height="103" alt=""></div>
-				</li>
-				<li class="equip__item">
-					<div class="equip__hover">
-						<div class="equip__hover-title">Характеристики:</div>
-						<ul>
-							<li>делікатна робота апарату гарантує збереження кісткової тканини;</li>
-							<li>мінімізує післяопераційний біль
-								за рахунок розрізу без тиску;</li>
-							<li>має спеціальну насадку,
-								яка запобігає пошкодженню
-								м’яких тканин;</li>
-							<li>забезпечує точний розріз
-								у необхідному місці.</li>
-						</ul>
-					</div>
-					<div class="equip__info">
-						<div class="equip__name">PICASSO LASER</div>
-						<div class="equip__country">AMD LASERS (США)</div>
-						<div class="equip__text">Необхідний для лікування слизової оболонки, а саме запальних процесів ротової
-							порожнини (пародонтит, стоматит, гінгівіт тощо).</div>
-					</div>
-					<div class="equip__img">
-						<picture>
-							<source srcset="img/equip-2.webp 1x, img/equip-2@2x.webp 2x" type="image/webp">
-							<img loading="lazy" src="img/equip-2.jpg" srcset="img/equip-2.jpg 1x, img/equip-2@2x.jpg 2x" width="262"
-								height="152" alt="">
-						</picture>
-					</div>
-					<div class="equip__line equip__line--2"><img src="img/equip-line-2.svg" width="80" height="262" alt=""></div>
-				</li>
-				<li class="equip__item">
-					<div class="equip__hover">
-						<div class="equip__hover-title">Характеристики:</div>
-						<ul>
-							<li>делікатна робота апарату гарантує збереження кісткової тканини;</li>
-							<li>мінімізує післяопераційний біль
-								за рахунок розрізу без тиску;</li>
-							<li>має спеціальну насадку,
-								яка запобігає пошкодженню
-								м’яких тканин;</li>
-							<li>забезпечує точний розріз
-								у необхідному місці.</li>
-						</ul>
-					</div>
-					<div class="equip__img">
-						<picture>
-							<source srcset="img/equip-3.webp 1x, img/equip-3@2x.webp 2x" type="image/webp">
-							<img loading="lazy" src="img/equip-3.jpg" srcset="img/equip-3.jpg 1x, img/equip-3@2x.jpg 2x" width="196"
-								height="196" alt="">
-						</picture>
-					</div>
-					<div class="equip__info">
-						<div class="equip__name">Сканер інтраоральний PRIMESCAN AC</div>
-						<div class="equip__country">DENTSPLY SIRONA (Німеччина)</div>
-						<div class="equip__text">Найновіша лікарська  система
-							для отримання точного оптичного відбитку ротової порожнини пацієнта.</div>
-					</div>
-					<div class="equip__line equip__line--3"><img src="img/equip-line-3.svg" width="79" height="103" alt=""></div>
-				</li>
-				<li class="equip__item">
-					<div class="equip__hover">
-						<div class="equip__hover-title">Характеристики:</div>
-						<ul>
-							<li>делікатна робота апарату гарантує збереження кісткової тканини;</li>
-							<li>мінімізує післяопераційний біль
-								за рахунок розрізу без тиску;</li>
-							<li>має спеціальну насадку,
-								яка запобігає пошкодженню
-								м’яких тканин;</li>
-							<li>забезпечує точний розріз
-								у необхідному місці.</li>
-						</ul>
-					</div>
-					<div class="equip__info">
-						<div class="equip__name">Рентгенівська система
-							X&#8209;MIND&nbsp;TRIUM
-							з&nbsp;цефалостатом</div>
-						<div class="equip__country">ACTEON (Англія)</div>
-						<div class="equip__text">Система дозволяє знизити променеве навантаження, забезпечуючи максимальний захист
-							пацієнта, зберігаючи високий рівень деталізації фото</div>
-					</div>
-					<div class="equip__img">
-						<picture>
-							<source srcset="img/equip-4.webp 1x, img/equip-4@2x.webp 2x" type="image/webp">
-							<img loading="lazy" src="img/equip-4.jpg" srcset="img/equip-4.jpg 1x, img/equip-4@2x.jpg 2x" width="262"
-								height="152" alt="">
-						</picture>
-					</div>
-					<div class="equip__line equip__line--4"><img src="img/equip-line-4.svg" width="78" height="262" alt=""></div>
-				</li>
-			</ul>
+			<div class="equip__list-wrapper">
+				<ul class="equip__list">
+					<li class="equip__item">
+						<div class="equip__hover">
+							<div class="equip__hover-title">Характеристики:</div>
+							<ul>
+								<li>делікатна робота апарату гарантує збереження кісткової тканини;</li>
+								<li>мінімізує післяопераційний біль
+									за рахунок розрізу без тиску;</li>
+								<li>має спеціальну насадку,
+									яка запобігає пошкодженню
+									м’яких тканин;</li>
+								<li>забезпечує точний розріз
+									у необхідному місці.</li>
+							</ul>
+						</div>
+						<div class="equip__img">
+							<picture>
+								<source srcset="img/equip-1.webp 1x, img/equip-1@2x.webp 2x" type="image/webp">
+								<img loading="lazy" src="img/equip-1.jpg" srcset="img/equip-1.jpg 1x, img/equip-1@2x.jpg 2x" width="196"
+									height="196" alt="">
+							</picture>
+						</div>
+						<div class="equip__info">
+							<div class="equip__name">PIEZOTOME® CUBE (LED)</div>
+							<div class="equip__country">ACTEON (Англія)</div>
+							<div class="equip__text">Використовується при операціях з видалення зубів, виправлення прикусу, синус
+								ліфтингу та реконструкції кістки.</div>
+						</div>
+						<div class="equip__line equip__line--1"><img src="img/equip-line-1.svg" width="79" height="103" alt="">
+						</div>
+					</li>
+					<li class="equip__item">
+						<div class="equip__hover">
+							<div class="equip__hover-title">Характеристики:</div>
+							<ul>
+								<li>делікатна робота апарату гарантує збереження кісткової тканини;</li>
+								<li>мінімізує післяопераційний біль
+									за рахунок розрізу без тиску;</li>
+								<li>має спеціальну насадку,
+									яка запобігає пошкодженню
+									м’яких тканин;</li>
+								<li>забезпечує точний розріз
+									у необхідному місці.</li>
+							</ul>
+						</div>
+						<div class="equip__info">
+							<div class="equip__name">PICASSO LASER</div>
+							<div class="equip__country">AMD LASERS (США)</div>
+							<div class="equip__text">Необхідний для лікування слизової оболонки, а саме запальних процесів ротової
+								порожнини (пародонтит, стоматит, гінгівіт тощо).</div>
+						</div>
+						<div class="equip__img">
+							<picture>
+								<source srcset="img/equip-2.webp 1x, img/equip-2@2x.webp 2x" type="image/webp">
+								<img loading="lazy" src="img/equip-2.jpg" srcset="img/equip-2.jpg 1x, img/equip-2@2x.jpg 2x" width="262"
+									height="152" alt="">
+							</picture>
+						</div>
+						<div class="equip__line equip__line--2"><img src="img/equip-line-2.svg" width="80" height="262" alt="">
+						</div>
+					</li>
+					<li class="equip__item">
+						<div class="equip__hover">
+							<div class="equip__hover-title">Характеристики:</div>
+							<ul>
+								<li>делікатна робота апарату гарантує збереження кісткової тканини;</li>
+								<li>мінімізує післяопераційний біль
+									за рахунок розрізу без тиску;</li>
+								<li>має спеціальну насадку,
+									яка запобігає пошкодженню
+									м’яких тканин;</li>
+								<li>забезпечує точний розріз
+									у необхідному місці.</li>
+							</ul>
+						</div>
+						<div class="equip__img">
+							<picture>
+								<source srcset="img/equip-3.webp 1x, img/equip-3@2x.webp 2x" type="image/webp">
+								<img loading="lazy" src="img/equip-3.jpg" srcset="img/equip-3.jpg 1x, img/equip-3@2x.jpg 2x" width="196"
+									height="196" alt="">
+							</picture>
+						</div>
+						<div class="equip__info">
+							<div class="equip__name">Сканер інтраоральний PRIMESCAN AC</div>
+							<div class="equip__country">DENTSPLY SIRONA (Німеччина)</div>
+							<div class="equip__text">Найновіша лікарська  система
+								для отримання точного оптичного відбитку ротової порожнини пацієнта.</div>
+						</div>
+						<div class="equip__line equip__line--3"><img src="img/equip-line-3.svg" width="79" height="103" alt="">
+						</div>
+					</li>
+					<li class="equip__item">
+						<div class="equip__hover">
+							<div class="equip__hover-title">Характеристики:</div>
+							<ul>
+								<li>делікатна робота апарату гарантує збереження кісткової тканини;</li>
+								<li>мінімізує післяопераційний біль
+									за рахунок розрізу без тиску;</li>
+								<li>має спеціальну насадку,
+									яка запобігає пошкодженню
+									м’яких тканин;</li>
+								<li>забезпечує точний розріз
+									у необхідному місці.</li>
+							</ul>
+						</div>
+						<div class="equip__info">
+							<div class="equip__name">Рентгенівська система
+								X&#8209;MIND&nbsp;TRIUM
+								з&nbsp;цефалостатом</div>
+							<div class="equip__country">ACTEON (Англія)</div>
+							<div class="equip__text">Система дозволяє знизити променеве навантаження, забезпечуючи максимальний захист
+								пацієнта, зберігаючи високий рівень деталізації фото</div>
+						</div>
+						<div class="equip__img">
+							<picture>
+								<source srcset="img/equip-4.webp 1x, img/equip-4@2x.webp 2x" type="image/webp">
+								<img loading="lazy" src="img/equip-4.jpg" srcset="img/equip-4.jpg 1x, img/equip-4@2x.jpg 2x" width="262"
+									height="152" alt="">
+							</picture>
+						</div>
+						<div class="equip__line equip__line--4"><img src="img/equip-line-4.svg" width="78" height="262" alt="">
+						</div>
+					</li>
+				</ul>
+				<div class="swiper-pagination slider-pagination"></div>
+			</div>
 		</div>
 	</div>
 </section>
-    <section class="works section" id="works">
+    <section class="works section section--head-white" id="works">
 	<div class="container container--lg">
 		<div class="works__inner">
 			<div class="works__head section__head">
-				<h3 class="works__title title"><span>ПРИКЛАДИ</span> ПРОФЕСІЙНОЇ РОБОТИ ЛІКАРІВ</h3>
-				<div class="section__counter section__counter--white"></div>
+				<h3 class="works__title section__title"><span class="color-orange">ПРИКЛАДИ</span> ПРОФЕСІЙНОЇ РОБОТИ ЛІКАРІВ
+				</h3>
+				<div class="section__counter section__counter"></div>
 			</div>
 			<div class="works__content">
 				<ol class="works__list">
@@ -1010,15 +1094,9 @@
 							</div>
 						</div>
 						<div class="works__images">
-							<div class="works__controls">
-								<div class="works__drag">
-									<div class="works__drag-icon"></div>
-									<div class="works__drag-line"></div>
-								</div>
-								<div class="works__captions">
-									<div class="works__captions-item works__captions-item--before is-active">до</div>
-									<div class="works__captions-item works__captions-item--after">після</div>
-								</div>
+							<div class="works__drag">
+								<div class="works__drag-icon"></div>
+								<div class="works__drag-line"></div>
 							</div>
 							<div class="works__img works__img--before">
 								<picture>
@@ -1034,6 +1112,10 @@
 										srcset="img/works-2.jpg 1x, img/works-2@2x.jpg 2x" width="570" height="276" alt="">
 								</picture>
 							</div>
+						</div>
+						<div class="works__captions">
+							<div class="works__captions-item works__captions-item--before is-active">до</div>
+							<div class="works__captions-item works__captions-item--after">після</div>
 						</div>
 					</li>
 					<li class="works__item">
@@ -1062,16 +1144,11 @@
 							</div>
 						</div>
 						<div class="works__images">
-							<div class="works__controls">
-								<div class="works__drag">
-									<div class="works__drag-icon"></div>
-									<div class="works__drag-line"></div>
-								</div>
-								<div class="works__captions">
-									<div class="works__captions-item works__captions-item--before is-active">до</div>
-									<div class="works__captions-item works__captions-item--after">після</div>
-								</div>
+							<div class="works__drag">
+								<div class="works__drag-icon"></div>
+								<div class="works__drag-line"></div>
 							</div>
+
 							<div class="works__img works__img--before">
 								<picture>
 									<source srcset="img/works-1.webp 1x, img/works-1@2x.webp 2x" type="image/webp">
@@ -1086,6 +1163,10 @@
 										srcset="img/works-2.jpg 1x, img/works-2@2x.jpg 2x" width="570" height="276" alt="">
 								</picture>
 							</div>
+						</div>
+						<div class="works__captions">
+							<div class="works__captions-item works__captions-item--before is-active">до</div>
+							<div class="works__captions-item works__captions-item--after">після</div>
 						</div>
 					</li>
 					<li class="works__item">
@@ -1114,16 +1195,11 @@
 							</div>
 						</div>
 						<div class="works__images">
-							<div class="works__controls">
-								<div class="works__drag">
-									<div class="works__drag-icon"></div>
-									<div class="works__drag-line"></div>
-								</div>
-								<div class="works__captions">
-									<div class="works__captions-item works__captions-item--before is-active">до</div>
-									<div class="works__captions-item works__captions-item--after">після</div>
-								</div>
+							<div class="works__drag">
+								<div class="works__drag-icon"></div>
+								<div class="works__drag-line"></div>
 							</div>
+
 							<div class="works__img works__img--before">
 								<picture>
 									<source srcset="img/works-1.webp 1x, img/works-1@2x.webp 2x" type="image/webp">
@@ -1138,6 +1214,10 @@
 										srcset="img/works-2.jpg 1x, img/works-2@2x.jpg 2x" width="570" height="276" alt="">
 								</picture>
 							</div>
+						</div>
+						<div class="works__captions">
+							<div class="works__captions-item works__captions-item--before is-active">до</div>
+							<div class="works__captions-item works__captions-item--after">після</div>
 						</div>
 					</li>
 					<li class="works__item">
@@ -1166,16 +1246,11 @@
 							</div>
 						</div>
 						<div class="works__images">
-							<div class="works__controls">
-								<div class="works__drag">
-									<div class="works__drag-icon"></div>
-									<div class="works__drag-line"></div>
-								</div>
-								<div class="works__captions">
-									<div class="works__captions-item works__captions-item--before is-active">до</div>
-									<div class="works__captions-item works__captions-item--after">після</div>
-								</div>
+							<div class="works__drag">
+								<div class="works__drag-icon"></div>
+								<div class="works__drag-line"></div>
 							</div>
+
 							<div class="works__img works__img--before">
 								<picture>
 									<source srcset="img/works-1.webp 1x, img/works-1@2x.webp 2x" type="image/webp">
@@ -1190,6 +1265,10 @@
 										srcset="img/works-2.jpg 1x, img/works-2@2x.jpg 2x" width="570" height="276" alt="">
 								</picture>
 							</div>
+						</div>
+						<div class="works__captions">
+							<div class="works__captions-item works__captions-item--before is-active">до</div>
+							<div class="works__captions-item works__captions-item--after">після</div>
 						</div>
 					</li>
 					<li class="works__item">
@@ -1218,16 +1297,11 @@
 							</div>
 						</div>
 						<div class="works__images">
-							<div class="works__controls">
-								<div class="works__drag">
-									<div class="works__drag-icon"></div>
-									<div class="works__drag-line"></div>
-								</div>
-								<div class="works__captions">
-									<div class="works__captions-item works__captions-item--before is-active">до</div>
-									<div class="works__captions-item works__captions-item--after">після</div>
-								</div>
+							<div class="works__drag">
+								<div class="works__drag-icon"></div>
+								<div class="works__drag-line"></div>
 							</div>
+
 							<div class="works__img works__img--before">
 								<picture>
 									<source srcset="img/works-1.webp 1x, img/works-1@2x.webp 2x" type="image/webp">
@@ -1242,6 +1316,10 @@
 										srcset="img/works-2.jpg 1x, img/works-2@2x.jpg 2x" width="570" height="276" alt="">
 								</picture>
 							</div>
+						</div>
+						<div class="works__captions">
+							<div class="works__captions-item works__captions-item--before is-active">до</div>
+							<div class="works__captions-item works__captions-item--after">після</div>
 						</div>
 					</li>
 					<li class="works__item">
@@ -1270,15 +1348,9 @@
 							</div>
 						</div>
 						<div class="works__images">
-							<div class="works__controls">
-								<div class="works__drag">
-									<div class="works__drag-icon"></div>
-									<div class="works__drag-line"></div>
-								</div>
-								<div class="works__captions">
-									<div class="works__captions-item works__captions-item--before is-active">до</div>
-									<div class="works__captions-item works__captions-item--after">після</div>
-								</div>
+							<div class="works__drag">
+								<div class="works__drag-icon"></div>
+								<div class="works__drag-line"></div>
 							</div>
 							<div class="works__img works__img--before">
 								<picture>
@@ -1294,6 +1366,10 @@
 										srcset="img/works-2.jpg 1x, img/works-2@2x.jpg 2x" width="570" height="276" alt="">
 								</picture>
 							</div>
+						</div>
+						<div class="works__captions">
+							<div class="works__captions-item works__captions-item--before is-active">до</div>
+							<div class="works__captions-item works__captions-item--after">після</div>
 						</div>
 					</li>
 				</ol>
@@ -1336,7 +1412,7 @@
 		<div class="reviews__inner">
 			<div class="reviews__left">
 				<div class="section__counter"></div>
-				<h3 class="reviews__title title">ВІДГУКИ КЛІЄНТІВ, які довіряють</h3>
+				<h3 class="reviews__title section__title">ВІДГУКИ КЛІЄНТІВ, які довіряють</h3>
 				<button class="reviews__btn btn" data-modal-open="modal-form">
 					<span class="btn__wrapper">
 						<span class="btn__container">
@@ -1469,12 +1545,12 @@
 		</div>
 	</div>
 </section>
-    <section class="team section" id="team">
+    <section class="team section section--head-white" id="team">
 	<div class="container">
 		<div class="team__inner">
 			<div class="team__head section__head">
-				<h3 class="team__title title">КОМАНДА <br> ДОСВІДЧЕНИХ ЛІКАРІВ</h3>
-				<div class="section__counter section__counter--white"></div>
+				<h3 class="team__title section__title">КОМАНДА <br> ДОСВІДЧЕНИХ ЛІКАРІВ</h3>
+				<div class="section__counter"></div>
 			</div>
 			<ul class="team__list">
 				<li class="team__item">
@@ -1606,7 +1682,7 @@
 		<div class="certificates__inner">
 			<div class="certificates__left">
 				<div class="section__counter"></div>
-				<h3 class="certificates__title title">безперервна
+				<h3 class="certificates__title section__title">безперервна
 					освіта -
 					запорука
 					успіху</h3>
@@ -1696,7 +1772,7 @@
 		</div>
 	</div>
 </section>
-    <section class="lead section" id="lead">
+    <section class="lead section section--head-white" id="lead">
 	<div class="container">
 		<div class="lead__inner">
 			<div class="lead__left">
@@ -1725,8 +1801,10 @@
 				</div>
 			</div>
 			<div class="lead__right">
-				<div class="section__counter section__counter--white"></div>
-				<h3 class="lead__title title">СТОМАТОЛОГІЯ SOPRANO - <span>ШВИДКЕ та БЕЗБОЛІСНЕ</span> ЛІКУВАННЯ ВАШИХ ЗУБІВ
+				<div class="section__counter"></div>
+				<h3 class="lead__title section__title">СТОМАТОЛОГІЯ SOPRANO - <span class="color-orange">ШВИДКЕ та
+						БЕЗБОЛІСНЕ</span> ЛІКУВАННЯ ВАШИХ
+					ЗУБІВ
 				</h3>
 				<button class="lead__btn btn btn--accent" data-modal-open="modal-form">
 					<span class="btn__wrapper">
@@ -1771,7 +1849,7 @@
 			</div>
 			<div class="contacts__info">
 				<div class="section__counter"></div>
-				<h3 class="contacts__title title">КОнтакти</h3>
+				<h3 class="contacts__title section__title">КОнтакти</h3>
 				<ul class="contacts__items">
 					<li class="contacts__item">
 						<div class="contacts__icon">

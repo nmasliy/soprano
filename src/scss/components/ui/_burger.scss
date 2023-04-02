@@ -1,46 +1,47 @@
 .burger {
-  $burger-width: 18px;
-  $burger-height: 14px;
-  $burger-line-height: 2px;
+  $burger-width: 38px;
+  $burger-height: 38px;
+  $burger-line-height: 1px;
 
   position: relative;
   display: none;
+  outline: none;
   border: none;
-  padding: 0;
+  border-radius: 8px;
   width: $burger-width;
   height: $burger-height;
-  color: #fff;
-  background-color: transparent;
-  cursor: pointer;
+  text-align: right;
+  color: #000;
+  background-color: $accent-color;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    left: 0;
+    right: 9px;
     border-radius: 2px;
     width: 100%;
     height: $burger-line-height;
     background-color: currentcolor;
-    transition:
-      transform $menu-transition,
-      top $menu-transition;
+    transition: $menu-transition;
   }
 
   &::before {
-    top: 0;
+    top: 12px;
+    width: 20px;
   }
 
   &::after {
-    top: calc(100% - $burger-line-height);
+    top: 25px;
+    width: 10px;
   }
 
   &__line {
     position: absolute;
-    left: 0;
+    right: 9px;
     top: 50%;
     border-radius: 2px;
-    width: 100%;
+    width: 15px;
     height: $burger-line-height;
     background-color: currentcolor;
     transform: translateY(-50%);
@@ -50,26 +51,27 @@
   &.is-active {
     z-index: 9;
 
-    &::before {
+    &::before,
+    &::after {
       top: 50%;
+      width: 20px;
+    }
+
+    &::before {
       transform: rotate(45deg);
-      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
     }
 
     &::after {
-      top: 50%;
       transform: rotate(-45deg);
-      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
     }
 
     .burger__line {
       transform: scale(0);
-      transition: transform 0.3s ease-in-out;
     }
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .burger {
     display: block;
   }

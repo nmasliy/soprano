@@ -1,10 +1,10 @@
 (function () {
   const $html = document.querySelector('html');
-  const $menu = document?.querySelector('[data-menu]');
-  const $burger = document?.querySelector('[data-burger]');
+  const $menu = document.querySelector('.menu');
+  const $burger = document.querySelector('.burger');
   const $close = document?.querySelector('[data-menu-close]');
-  const $overlay = document?.querySelector('[data-menu-overlay]');
-  const $menuItems = document?.querySelectorAll('[data-menu-item]');
+  const $overlay = document?.querySelector('.overlay');
+  const $menuItems = document?.querySelectorAll('.menu__nav li a');
   const TRANSITION_DELAY = 400;
   const MOBILE_MENU_BREAKPOINT = 1024;
 

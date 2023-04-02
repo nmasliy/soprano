@@ -76,6 +76,7 @@
   &__phone {
     position: relative;
     display: inline-block;
+    flex-shrink: 0;
     margin-right: 40px;
     padding: 3px 0 3px 34px;
     font-family: "Prosto One", serif;
@@ -98,7 +99,6 @@
   }
 
   &__nav {
-    margin-right: 30px;
     font-size: 14px;
 
     ul {
@@ -122,14 +122,13 @@
         border-radius: 50%;
         width: 6px;
         height: 6px;
-        background: #ee751a;
+        background: $orange-color;
         opacity: 0;
         transform: translateY(-50%);
         transition: $transition;
       }
 
       @include hover {
-        // color: #000;
         text-shadow: 0.5px 0 0 $black-color;
 
         &::before {
@@ -139,8 +138,8 @@
     }
   }
 
-  &__burger {
-    margin-left: 24px;
+  &__left {
+    margin-right: 30px;
   }
 
   &.is-fixed {
@@ -162,22 +161,57 @@
   padding: 20px 0;
 }
 
+@media screen and (max-width: 1280px) {
+  .header {
+    &__logo {
+      margin-right: 30px;
+    }
+
+    &__phone {
+      margin-right: 17px;
+    }
+
+    &__nav li {
+      @include mr(18px);
+    }
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .header {
-    &__nav {
-      font-size: 20px;
+    border-bottom: 1px solid #d3dbe1;
 
-      ul {
-        display: block;
+    &__phone {
+      padding-left: 30px;
+
+      &::before {
+        width: 20px;
+        height: 20px;
+        background-size: cover;
       }
+    }
 
-      li {
-        @include mr(0);
-      }
+    &__nav,
+    &__languages,
+    &__btn {
+      display: none;
+    }
+  }
+}
 
-      a {
-        display: block;
-        padding: 12px;
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 7px 0;
+
+    &__left {
+      margin-right: 10px;
+    }
+
+    &__logo {
+      margin-right: 0;
+
+      img {
+        width: 74px;
       }
     }
   }

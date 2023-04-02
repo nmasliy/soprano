@@ -52,16 +52,15 @@
   }
 }
 
-@mixin bg-circle($size: 340px) {
+@mixin bg-circle($size: 324px) {
   position: absolute;
   content: "";
   width: $size;
   height: $size;
   border-radius: 50%;
-  background: linear-gradient(90.05deg, #59D24E 7.38%, #39B92D 99.32%), #8000FF;
-  filter: blur(100px);
+  background: #F4F8FC;
+  filter: blur(50px);
   will-change: filter;
-  z-index: -1;
 }
 
 @mixin triangle($size: 20px) {

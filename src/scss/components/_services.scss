@@ -10,7 +10,6 @@
   &__title {
     margin-right: 10px;
     max-width: 940px;
-    color: #fff;
   }
 
   &__content {
@@ -67,6 +66,10 @@
       display: flex;
     }
 
+    img {
+      width: 100%;
+    }
+
     &:first-child {
       img {
         border-radius: 10px 0 0 10px;
@@ -97,6 +100,7 @@
 
   &__info {
     p {
+      margin-bottom: 14px;
       font-weight: 500;
       color: #d6d6d6;
     }
@@ -165,7 +169,7 @@
       border-radius: 50%;
       width: 8px;
       height: 8px;
-      background-color: #ee751a;
+      background-color: $orange-color;
     }
   }
 
@@ -225,11 +229,42 @@
   }
 
   &__item {
-    position: relative;
     margin-bottom: 6px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.is-active {
+      .services-tabs__name {
+        color: $black-color;
+        background-color: $accent-color;
+
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+
+    @include hover {
+      &:not(.is-active) .services-tabs__name {
+        border-color: #fff;
+        color: #41404e;
+        background-color: #f0f6f9;
+
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__name {
+    position: relative;
     border: 1px solid transparent;
     border-radius: 10px;
     padding: 10px 40px 10px 20px;
+    font-size: 15px;
     background: rgba(255, 255, 255, 8%);
     transition: 0.3s;
     cursor: pointer;
@@ -248,30 +283,138 @@
       transform: translateY(-50%);
       transition: $transition;
     }
+  }
+}
 
-    &:last-child {
-      margin-bottom: 0;
+@media screen and (max-width: 1280px) {
+  .services__subtitle {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .services {
+    padding: 50px 0;
+
+    &__head {
+      margin-bottom: 28px;
     }
 
-    &.is-active {
-      color: $black-color;
-      background-color: $accent-color;
+    &__content {
+      display: block;
+    }
 
-      &::after {
-        opacity: 1;
+    &__tab-content {
+      border: 1px solid rgba(255, 255, 255, 16%);
+      border-radius: 12px;
+      padding: 16px;
+      background: rgba(246, 249, 250, 8%);
+    }
+
+    &__img {
+      &:first-child {
+        img {
+          border-radius: 12px 0 0 12px;
+        }
       }
-    }
 
-    @include hover {
-      &:not(.is-active) {
-        border-color: #fff;
-        color: #41404e;
-        background-color: #f0f6f9;
-
-        &::after {
-          opacity: 1;
+      &:last-child {
+        img {
+          border-radius: 0 12px 12px 0;
         }
       }
     }
+
+    &__subtitle,
+    &__right {
+      display: none;
+    }
+  }
+
+  .services-tabs {
+    &__box {
+      &:first-child {
+        .services-tabs__title {
+          max-width: 214px;
+        }
+      }
+    }
+
+    &__item {
+      &.is-active {
+        margin-bottom: 20px;
+
+        .services__tab-content {
+          border-radius: 0 0 12px 12px;
+        }
+
+        .services-tabs__name {
+          border-radius: 12px 12px 0 0;
+
+          &::after {
+            transform: translateY(-50%) rotate(90deg);
+          }
+        }
+      }
+    }
+
+    &__icon {
+      width: 46px;
+      height: 46px;
+
+      img {
+        width: 31px;
+      }
+    }
+
+    &__name {
+      padding: 12px 45px 12px 20px;
+
+      &::after {
+        width: 26px;
+        height: 26px;
+        background-size: cover;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    &__img-caption {
+      top: 12px;
+      font-size: 11px;
+    }
+
+    &__footer {
+      display: block;
+      margin: 0 -16px -16px;
+      border-radius: 0 0 12px 12px;
+      padding: 20px 16px 16px;
+      text-align: center;
+    }
+
+    &__price {
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    &__btn {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    &__steps {
+      display: block;
+
+      li {
+        @include mb(7px);
+      }
+    }
+  }
+
+  .services-tabs {
+
   }
 }

@@ -25,7 +25,7 @@
         }
 
         &__btn-modal {
-          display: inline-flex;
+          display: inline-block;
         }
 
         &__item {
@@ -43,7 +43,6 @@
 
   &__title {
     max-width: 814px;
-    color: #fff;
   }
 
   &__list {
@@ -95,6 +94,7 @@
 
   &__doctors {
     display: flex;
+    flex-shrink: 0;
     align-items: center;
 
     ul {
@@ -156,6 +156,8 @@
   }
 
   &__drag {
+    touch-action: none;
+
     &-line {
       position: absolute;
       left: 50%;
@@ -192,7 +194,7 @@
   &__captions {
     position: absolute;
     left: 50%;
-    bottom: 16px;
+    bottom: 40px;
     z-index: 4;
     display: flex;
     border: 1px solid rgba(8, 8, 13, 20%);
@@ -226,6 +228,99 @@
     &.is-current {
       color: #08080d;
       background-color: $accent-color;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .works {
+    background: url("../img/team-bg.jpg") center / cover no-repeat;
+    background-color: rgba(16, 15, 20, 94%);
+
+    &__name {
+      font-weight: 500;
+      font-size: 15px;
+
+      &::before {
+        margin-right: 12px;
+        font-size: 18px;
+      }
+    }
+
+    &__item {
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    &__inner {
+      border-radius: 0;
+      padding: 0;
+      background: 0;
+    }
+
+    &__doctors-caption {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .works {
+    &__list {
+      display: block;
+      margin-bottom: 28px;
+    }
+
+    &__item {
+      position: relative;
+      margin-top: 16px;
+      padding-bottom: 80px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    &__images {
+      margin: 0 -18px;
+    }
+
+    &__captions {
+      left: auto;
+      right: 18px;
+      bottom: 18px;
+      border: 1px solid rgba(246, 249, 250, 16%);
+      border-radius: 22px;
+      padding: 6px;
+      background-color: transparent;
+      transform: none;
+
+      &-item {
+        min-width: 63px;
+      }
+    }
+
+    &__doctors {
+      position: absolute;
+      left: 18px;
+      bottom: 18px;
+
+      img {
+        width: 44px;
+        height: 44px;
+      }
+    }
+
+    &__img {
+      img {
+        border-radius: 0;
+      }
+    }
+
+    &__btn-more,
+    &__btn-modal {
+      width: 100%;
+      max-width: 500px;
     }
   }
 }

@@ -1,13 +1,13 @@
 <section class="hero section" id="hero">
-  @include('header.html')
   <div class="container">
     <div class="hero__inner">
-      <div class="hero__left">
-        <h1 class="hero__title"><span>Безболісне лікування,</span>
+      <div class="hero__box">
+        <h1 class="hero__title"><span class="color-orange">Безболісне лікування</span><span
+            class="color-orange hide-tablet">,</span><span class="show-tablet"> зубiв,</span>
           імплантація, чистка
-          і&nbsp;вирівнювання зубів</h1>
+          і&nbsp;вирівнювання <span class="hide-tablet">зубів</span></h1>
         <p class="hero__text">Спеціалісти з досвідом більше 10 років</p>
-        <button class="hero__btn btn" data-modal-open="modal-form">
+        <button class="hero__btn btn hide-tablet" data-modal-open="modal-form">
           <span class="btn__wrapper">
             <span class="btn__container">
               <span class="btn__inner">
@@ -21,55 +21,9 @@
             </span>
           </span>
         </button>
-
-        <ul class="hero__benefits hero-benefits">
-          <li class="hero-benefits__item">
-            <div class="hero-benefits__icon">
-              <picture>
-                <source srcset="img/hero-icon-1.webp 1x, img/hero-icon-1@2x.webp 2x" type="image/webp">
-                <img loading="lazy" src="img/hero-icon-1.png" srcset="img/hero-icon-1.png 1x, img/hero-icon-1@2x.png 2x"
-                  width="24" height="24" alt="">
-              </picture>
-            </div>
-            <div class="hero-benefits__text">Антистресс <br>
-              <strong>стоматологія без болю</strong>
-            </div>
-          </li>
-          <li class="hero-benefits__item">
-            <div class="hero-benefits__icon">
-              <picture>
-                <source srcset="img/hero-icon-2.webp 1x, img/hero-icon-2@2x.webp 2x" type="image/webp">
-                <img loading="lazy" src="img/hero-icon-2.png" srcset="img/hero-icon-2.png 1x, img/hero-icon-2@2x.png 2x"
-                  width="24" height="24" alt="">
-              </picture>
-            </div>
-            <div class="hero-benefits__text"><strong>Матеріали провідних виробників</strong> Німеччини,
-              США&nbsp;та&nbsp;Швейцарії</div>
-          </li>
-          <li class="hero-benefits__item">
-            <div class="hero-benefits__icon">
-              <picture>
-                <source srcset="img/hero-icon-3.webp 1x, img/hero-icon-3@2x.webp 2x" type="image/webp">
-                <img loading="lazy" src="img/hero-icon-3.png" srcset="img/hero-icon-3.png 1x, img/hero-icon-3@2x.png 2x"
-                  width="24" height="24" alt="">
-              </picture>
-            </div>
-            <div class="hero-benefits__text">Зручне місце <br> розташування</div>
-          </li>
-          <li class="hero-benefits__item">
-            <div class="hero-benefits__icon">
-              <picture>
-                <source srcset="img/hero-icon-4.webp 1x, img/hero-icon-4@2x.webp 2x" type="image/webp">
-                <img loading="lazy" src="img/hero-icon-4.png" srcset="img/hero-icon-4.png 1x, img/hero-icon-4@2x.png 2x"
-                  width="24" height="24" alt="">
-              </picture>
-            </div>
-            <div class="hero-benefits__text">Онлайн підтримка 24/7</div>
-          </li>
-        </ul>
       </div>
-      <div class="hero__right">
-        <div class="hero__img hero__img--main">
+      <div class="hero__box">
+        <div class="hero__img">
           <div class="hero__decor--1 decor-icon">
             <picture>
               <source srcset="img/hero-decor-1.webp 1x, img/hero-decor-1@2x.webp 2x" type="image/webp">
@@ -84,12 +38,87 @@
                 srcset="img/hero-decor-2.png 1x, img/hero-decor-2@2x.png 2x" width="100" height="100" alt="">
             </picture>
           </div>
+          <div class="hero__decor--3 decor-icon show-tablet-block">
+            <picture>
+              <source srcset="img/hero-decor-3.webp 1x, img/hero-decor-3@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/hero-decor-3.png"
+                srcset="img/hero-decor-3.png 1x, img/hero-decor-3@2x.png 2x" width="60" height="60" alt="">
+            </picture>
+          </div>
           <picture>
             <source srcset="img/hero-1.webp 1x, img/hero-1@2x.webp 2x" type="image/webp">
             <img loading="lazy" src="img/hero-1.jpg" srcset="img/hero-1.jpg 1x, img/hero-1@2x.jpg 2x" width="611"
               height="483" alt="Main image">
           </picture>
         </div>
+      </div>
+      <div class="hero__box">
+        <div class="hero__benefits-wrapper">
+          <ul class="hero__benefits hero-benefits">
+            <li class="hero-benefits__item">
+              <div class="hero-benefits__icon">
+                <picture>
+                  <source srcset="img/hero-icon-1.webp 1x, img/hero-icon-1@2x.webp 2x" type="image/webp">
+                  <img loading="lazy" src="img/hero-icon-1.png"
+                    srcset="img/hero-icon-1.png 1x, img/hero-icon-1@2x.png 2x" width="24" height="24" alt="">
+                </picture>
+              </div>
+              <div class="hero-benefits__text">Антистресс <br>
+                <strong>стоматологія без болю</strong>
+              </div>
+            </li>
+            <li class="hero-benefits__item">
+              <div class="hero-benefits__icon">
+                <picture>
+                  <source srcset="img/hero-icon-2.webp 1x, img/hero-icon-2@2x.webp 2x" type="image/webp">
+                  <img loading="lazy" src="img/hero-icon-2.png"
+                    srcset="img/hero-icon-2.png 1x, img/hero-icon-2@2x.png 2x" width="24" height="24" alt="">
+                </picture>
+              </div>
+              <div class="hero-benefits__text"><strong>Матеріали провідних виробників</strong> Німеччини,
+                США&nbsp;та&nbsp;Швейцарії</div>
+            </li>
+            <li class="hero-benefits__item">
+              <div class="hero-benefits__icon">
+                <picture>
+                  <source srcset="img/hero-icon-3.webp 1x, img/hero-icon-3@2x.webp 2x" type="image/webp">
+                  <img loading="lazy" src="img/hero-icon-3.png"
+                    srcset="img/hero-icon-3.png 1x, img/hero-icon-3@2x.png 2x" width="24" height="24" alt="">
+                </picture>
+              </div>
+              <div class="hero-benefits__text">Зручне місце <br> розташування</div>
+            </li>
+            <li class="hero-benefits__item">
+              <div class="hero-benefits__icon">
+                <picture>
+                  <source srcset="img/hero-icon-4.webp 1x, img/hero-icon-4@2x.webp 2x" type="image/webp">
+                  <img loading="lazy" src="img/hero-icon-4.png"
+                    srcset="img/hero-icon-4.png 1x, img/hero-icon-4@2x.png 2x" width="24" height="24" alt="">
+                </picture>
+              </div>
+              <div class="hero-benefits__text">Онлайн підтримка 24/7</div>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center show-tablet-block">
+          <button class="hero__btn btn" data-modal-open="modal-form">
+            <span class="btn__wrapper">
+              <span class="btn__container">
+                <span class="btn__inner">
+                  <span class="btn__inner-text">Отримати консультацію</span>
+                  <img src="img/star-icon.svg" width="21" height="21" alt="">
+                </span>
+                <span class="btn__hover">
+                  <span class="btn__hover-text">Отримати консультацію</span>
+                  <img src="img/arrow-btn-icon.svg" width="17" height="14" alt="">
+                </span>
+              </span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero__box">
         <div class="hero__images">
           <div class="hero__img">
             <picture>
@@ -98,8 +127,8 @@
                 height="172" alt="hero image">
             </picture>
           </div>
-          <div class="hero__img hero__img--decor">
-            <div class="hero__decor--3 decor-icon">
+          <div class="hero__img">
+            <div class="hero__decor--3 decor-icon hide-tablet">
               <picture>
                 <source srcset="img/hero-decor-3.webp 1x, img/hero-decor-3@2x.webp 2x" type="image/webp">
                 <img loading="lazy" src="img/hero-decor-3.png"
