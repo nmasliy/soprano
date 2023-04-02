@@ -4,6 +4,10 @@
   padding: 120px 0;
   background: #f4f8f8;
 
+  .slider-pagination {
+    display: none;
+  }
+
   &__head {
     margin-bottom: 50px;
   }
@@ -200,6 +204,10 @@
 
 @media screen and (max-width: 1240px) {
   .equip {
+    .slider-pagination {
+      display: block;
+    }
+
     &__list-wrapper {
       margin-right: -15px;
     }

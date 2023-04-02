@@ -2,6 +2,10 @@
   padding: 120px 0;
   background-color: #d9e8f5;
 
+  .slider-pagination {
+    display: none;
+  }
+
   &__inner {
     display: flex;
   }
@@ -74,29 +78,24 @@
     color: #13121e;
   }
 
-  &__right {
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
     padding-left: 45px;
     width: 100%;
-  }
-
-  &__row {
-    @include mb(12px);
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 600px;
     gap: 12px;
-
-    &:first-child {
-      margin-left: auto;
-    }
   }
 
   &__item {
     border: 1px solid #fff;
     border-radius: 10px;
     padding: 20px;
+    max-width: 295px;
     background: rgba(255, 255, 255, 70%);
+
+    &:first-child {
+      margin-left: auto;
+    }
   }
 
   &__head {
@@ -122,18 +121,20 @@
 
   &__name {
     margin-bottom: 3px;
-    font-weight: 600;
-    font-size: 14px;
-    color: #13121e;
+    font-weight: 700;
+    font-size: 15px;
+    color: #08080d;
   }
 
   &__date {
     font-size: 13px;
+    color: #282730;
   }
 
   &__text {
     margin-bottom: 16px;
     font-size: 13px;
+    color: #282730;
   }
 
   &__more-wrapper {
@@ -145,7 +146,7 @@
     font-size: 14px;
     line-height: 1.7;
     text-align: right;
-    color: #13121e;
+    color: #08080d;
 
     @include hover {
       text-decoration: underline;
@@ -162,5 +163,75 @@
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .reviews {
+    &__left {
+      max-width: 380px;
+    }
+
+    &__item {
+      max-width: 270px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .reviews {
+    padding: 50px 0;
+    background-color: #e8eff0;
+
+    .slider-pagination {
+      display: block;
+    }
+
+    &__decor-box {
+      left: auto;
+      right: 0;
+      top: 20px;
+    }
+
+    &__decor-face {
+      left: auto;
+      right: 5px;
+      top: 66px;
+      z-index: 2;
+
+      img {
+        width: 56px;
+        height: 56px;
+      }
+    }
+
+    &__title {
+      margin: 16px 0 28px;
+    }
+
+    &__inner {
+      display: block;
+    }
+
+    &__left {
+      margin-bottom: 28px;
+      max-width: 100%;
+    }
+
+    &__right {
+      margin-right: -15px;
+      margin-bottom: 28px;
+    }
+
+    &__btn {
+      width: 100%;
+    }
+
+    &__item {
+      border-radius: 12px;
+      width: 295px;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
   }
 }

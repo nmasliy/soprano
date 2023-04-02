@@ -95,7 +95,7 @@
     font-size: 52px;
     line-height: 1.24;
     text-transform: uppercase;
-    color: #08080d;
+    color: $black-color;
   }
 
   &:nth-child(9) ~ .section {
@@ -146,6 +146,7 @@
   position: fixed;
   right: 10%;
   bottom: 40px;
+  z-index: 10;
   border: 1px solid transparent;
   border-radius: 50%;
   width: 60px;
