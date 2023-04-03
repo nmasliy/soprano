@@ -87,11 +87,12 @@
     }
 
     &__btn {
+      margin-top: 24px;
       width: 100%;
     }
 
     &__head {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     &__inner {
@@ -100,10 +101,14 @@
 
     &__content {
       display: block;
-      margin: 0 auto 28px;
+      margin: 0 auto;
       max-width: 500px;
 
       &.is-active {
+        .benefits__btn {
+          display: none;
+        }
+
         .benefits__col:nth-child(2) ~ .benefits__col {
           display: flex;
         }
@@ -111,7 +116,7 @@
     }
 
     &__col {
-      margin: -6px 0;
+      margin: 0;
 
       &:nth-child(2) {
         flex-direction: column-reverse;

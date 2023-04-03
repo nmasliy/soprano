@@ -157,6 +157,8 @@
   }
 
   &--transparent {
+    box-shadow: 0 0 0 1px #08080d;
+
     .btn {
       &__wrapper {
         background-color: transparent;
