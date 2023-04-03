@@ -13,6 +13,10 @@
     }
   }
 
+  &__col-caption {
+    display: none;
+  }
+
   &__main {
     display: grid;
     grid-template-columns: 2.7fr 1fr 1fr 1fr;
@@ -102,5 +106,153 @@
     min-height: 24px;
     background-position: top left;
     background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .footer {
+    &__main,
+    &__bottom {
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    border-radius: 12px 12px 0 0;
+    padding: 0;
+    font-size: 15px;
+    background: #100f14;
+
+    &__main {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      overflow: auto;
+      margin: 0 -16px;
+      border-top: 1px solid #191924;
+      padding: 11px 16px;
+      font-size: 12px;
+      gap: 0 10px;
+
+      .footer {
+        &__socials {
+          display: none;
+        }
+
+        &__col {
+          flex-shrink: 0;
+
+          &:first-child {
+            order: 4;
+          }
+        }
+      }
+    }
+
+    &__copy {
+      span {
+        display: none;
+      }
+    }
+
+    &__logo {
+      margin-right: 11px;
+    }
+
+    &__caption {
+      font-size: 11px;
+    }
+
+    &__logo-wrapper {
+      justify-content: center;
+      grid-column: span 3;
+      margin-right: 0;
+      border-bottom: 1px solid #191924;
+      padding: 18px 0;
+
+      img {
+        width: 84px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .footer {
+    &__col-caption {
+      display: flex;
+      flex-direction: column;
+      margin-right: 12px;
+      width: 90px;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    &__socials-list {
+      margin-top: auto;
+    }
+
+    &__main {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 32px;
+      gap: 0;
+
+      .footer__col {
+        display: flex;
+        margin-bottom: 24px;
+
+        &:nth-child(4) {
+          .footer__list li {
+            @include mb(24px);
+          }
+        }
+
+        &:nth-child(3) {
+          order: 4;
+          margin-bottom: 0;
+        }
+
+        &:nth-child(2) {
+          padding: 14px 0;
+
+          .footer__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            li {
+              @include mr(23px);
+              @include mb(0);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .footer {
+    &__col-caption {
+      width: 70px;
+    }
+
+    &__main {
+      .footer__col {
+        &:nth-child(2) {
+          .footer__list {
+            li {
+              @include mr(13px);
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -76,3 +76,101 @@
     transform: translate3d(0, 35%, 0);
   }
 }
+
+@keyframes move-left {
+  0% {
+    transform: translate3d(-150%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .certificates {
+    padding: 20px 0;
+
+    .container {
+      padding: 0 8px;
+    }
+
+    &__right {
+      display: block;
+      margin: 0 -24px;
+    }
+
+    &__left {
+      margin-bottom: 28px;
+      padding: 0;
+    }
+
+    &__item {
+      @include mr(8px);
+
+      flex-shrink: 0;
+      margin-bottom: 0;
+      animation: move-left 25s linear infinite;
+
+      img {
+        width: 220px;
+      }
+
+      &:focus,
+      &:active {
+        filter: grayscale(0);
+      }
+    }
+
+    &__line {
+      @include mb(7px);
+
+      display: flex;
+      flex-wrap: nowrap;
+      animation: none;
+
+      &:focus,
+      &:active {
+        animation-play-state: paused;
+      }
+
+      &--inverse {
+        animation: move-left 30s linear infinite reverse;
+      }
+    }
+
+    &__title {
+      margin: 16px -10px 0 0;
+    }
+
+    &__text {
+      margin-left: auto;
+    }
+
+    &__inner {
+      display: block;
+      border-radius: 16px;
+      padding: 50px 16px 35px;
+      height: auto;
+      background: url("../img/certificates-decor-mobile.png") top 170px left 22px / 110px no-repeat;
+      background-color: #d9d9d9;
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .certificates {
+    &__item {
+      img {
+        width: 134px;
+      }
+    }
+
+    &__text {
+      max-width: 195px;
+      font-weight: 500;
+      font-size: 13px;
+      color: #282730;
+    }
+  }
+}

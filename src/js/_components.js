@@ -7,5 +7,6 @@ import './components/sliders';
 import './components/works-block';
 import './components/reviews-block';
 import './components/equip-block';
+import './components/team-block';
 import './components/form';
 import './components/animations';

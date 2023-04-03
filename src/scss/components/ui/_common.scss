@@ -85,7 +85,7 @@
       display: block;
       width: 27px;
       height: 12px;
-      background: url("../img/counter-icon.svg") center no-repeat;
+      background: url("../img/counter-icon.svg") center / cover no-repeat;
     }
   }
 
@@ -151,7 +151,7 @@
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: url("../img/arrow-top-icon.svg") center no-repeat;
+  background: url("../img/arrow-top-icon.svg") center  no-repeat;
   background-color: #08080d;
   opacity: 0;
   visibility: hidden;
@@ -229,6 +229,15 @@
 
 @media screen and (max-width: 570px) {
   .section {
+    &__counter {
+      font-size: 13px;
+
+      &::after {
+        width: 21px;
+        height: 9px;
+      }
+    }
+
     &__head {
       flex-direction: column-reverse;
       gap: 0;
