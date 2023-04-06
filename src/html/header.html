@@ -3,11 +3,14 @@
     <div class="header__inner">
       <div class="header__left">
         <a class="header__logo" href="./">
-          <img src="img/logo.png" width="116" height="40" alt="Soprano logo">
+          <picture>
+            <source srcset="img/logo.webp 1x, img/logo@2x.webp 2x" type="image/webp">
+            <img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" width="116" height="40" alt="">
+          </picture>
         </a>
         <nav class="header__nav nav">
           <ul>
-            <li><a href="#benefits">Послуги</a></li>
+            <li><a href="#services">Послуги</a></li>
             <li><a href="#works">Кейси</a></li>
             <li><a href="#team">Команда</a></li>
             <li><a href="#contacts">Контакти</a></li>
@@ -37,20 +40,88 @@
             </span>
           </span>
         </button>
-        <button class="burger">
+        <button class="header__burger burger">
           <span class="burger__line"></span>
         </button>
       </div>
-      <div class="menu">
-        <nav class="menu__nav nav">
-          <ul>
-            <li><a href="#benefits">Послуги</a></li>
-            <li><a href="#works">Кейси</a></li>
-            <li><a href="#team">Команда</a></li>
-            <li><a href="#contacts">Контакти</a></li>
-          </ul>
-        </nav>
-      </div>
+    </div>
+  </div>
+  <div class="menu">
+    <div class="menu__header">
+      <a class="menu__logo" href="#">
+        <picture>
+          <source srcset="img/logo.webp 1x, img/logo@2x.webp 2x" type="image/webp">
+          <img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" width="116" height="40" alt="">
+        </picture>
+      </a>
+      <ul class="menu__languages">
+        <li class="is-active"><a href="./">UA</a></li>
+        <li><a href="./">RU</a></li>
+        <li><a href="./">EN</a></li>
+      </ul>
+      <button class="menu__close burger burger--close"><span class="burger__line"></span></button>
+    </div>
+    <div class="menu__body">
+      <nav class="menu__nav nav">
+        <ul>
+          <li class="menu__item">
+            <a href="#services">Послуги</a>
+            <ul>
+              <li class="menu__submenu">
+                <a href="#services">Профілактики та лікування зубів</a>
+                <ul>
+                  <li><a href="#services">Професійне чищення зубів</a></li>
+                  <li><a href="#services">Лікування карієсу та каналів</a></li>
+                  <li><a href="#services">Відбілювання зубів</a></li>
+                </ul>
+              </li>
+              <li class="menu__submenu">
+                <a href="#services">Відновлення, корекція форми та кольору зубів</a>
+                <ul>
+                  <li><a href="#services">Протезування зубів</a></li>
+                  <li><a href="#services">Керамічні вініри</a></li>
+                  <li><a href="#services">Видалення зубів мудрості</a></li>
+                  <li><a href="#services">Пародонтологія</a></li>
+                </ul>
+              </li>
+              <li class="menu__submenu">
+                <a href="#services">Вирівнювання зубів</a>
+                <ul>
+                  <li><a href="#services">Елайнери</a></li>
+                  <li><a href="#services">Брекети</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item menu__item-row">
+            <a href="#works">Кейси</a>
+            <div class="menu__socials">
+              <ul>
+                <li><a href="https://www.facebook.com/soprano.dental"><img src="img/fb-black-icon.svg" width="23"
+                      height="23" alt="facebook"></a></li>
+                <li><a href="https://instagram.com/soprano_dental_house?igshid=YmMyMTA2M2Y="><img
+                      src="img/insta-black-icon.svg" width="24" height="24" alt="instagram"></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item"><a href="#team">Команда</a></li>
+          <li class="menu__item"><a href="#contacts">Контакти</a></li>
+        </ul>
+      </nav>
+      <button class="menu__btn btn" data-modal-open="modal-form">
+        <span class="btn__wrapper">
+          <span class="btn__container">
+            <span class="btn__inner">
+              <span class="btn__inner-text">Отримати консультацію</span>
+              <img src="img/star-icon.svg" width="21" height="21" alt="">
+            </span>
+            <span class="btn__hover">
+              <span class="btn__hover-text">Отримати консультацію</span>
+              <img src="img/arrow-btn-icon.svg" width="17" height="14" alt="">
+            </span>
+          </span>
+        </span>
+      </button>
     </div>
   </div>
   <div class="overlay"></div>

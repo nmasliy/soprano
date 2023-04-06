@@ -5,6 +5,7 @@
 
   position: relative;
   display: none;
+  flex-shrink: 0;
   outline: none;
   border: none;
   border-radius: 8px;
@@ -48,9 +49,8 @@
     transition: transform $menu-transition;
   }
 
-  &.is-active {
-    z-index: 9;
-
+  &.is-active,
+  &--close {
     &::before,
     &::after {
       top: 50%;

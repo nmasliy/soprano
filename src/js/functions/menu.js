@@ -2,7 +2,7 @@
   const $html = document.querySelector('html');
   const $menu = document.querySelector('.menu');
   const $burger = document.querySelector('.burger');
-  const $close = document?.querySelector('[data-menu-close]');
+  const $close = document?.querySelector('.menu__close');
   const $overlay = document?.querySelector('.overlay');
   const $menuItems = document?.querySelectorAll('.menu__nav li a');
   const TRANSITION_DELAY = 400;

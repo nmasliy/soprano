@@ -16,8 +16,11 @@
   }
 
   &__logo {
-    display: flex;
     margin-right: 60px;
+
+    picture {
+      display: flex;
+    }
   }
 
   &__languages {
