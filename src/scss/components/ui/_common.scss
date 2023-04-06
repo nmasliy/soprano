@@ -197,6 +197,10 @@
   }
 }
 
+.animate-show-up {
+  will-change: transform, opacity;
+}
+
 @media screen and (max-width: 1440px) {
   .section {
     &__title {
@@ -229,6 +233,8 @@
 
 @media screen and (max-width: 570px) {
   .scroll-top {
+    right: 20px;
+    bottom: 20px;
     width: 35px;
     height: 35px;
     background-size: 18px;
