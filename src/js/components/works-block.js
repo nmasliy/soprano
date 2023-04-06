@@ -10,7 +10,7 @@ initShowMore('.works__btn-more', '.works__content');
 const workItems = document.querySelectorAll('.works__item');
 
 workItems.forEach(el => {
-	const image = el.querySelector('.works__img--after');
+	const image = el.querySelector('.works__img--before');
 	const dragItem = interact(el.querySelector('.works__drag'));
 	const dragIcon = el.querySelector('.works__drag-icon');
 	const dragLine = el.querySelector('.works__drag-line');
@@ -46,16 +46,16 @@ workItems.forEach(el => {
 				setDragStyles(percent);
 
 				if (percent < 50) {
-					setActiveBeforeCaption(percent);
-				} else {
 					setActiveAfterCaption(percent);
+				} else {
+					setActiveBeforeCaption(percent);
 				}
       }
     }
   })
 
-	captionBefore.addEventListener('click', () => setActiveBeforeCaption(minValue));
-	captionAfter.addEventListener('click', () => setActiveAfterCaption(maxValue));
+	captionBefore.addEventListener('click', () => setActiveBeforeCaption(maxValue));
+	captionAfter.addEventListener('click', () => setActiveAfterCaption(minValue));
 
 	function setDragStyles(percent) {
 		dragIcon.style.left = percent + '%';

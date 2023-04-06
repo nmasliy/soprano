@@ -56,7 +56,6 @@
   &__images {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 24px;
   }
 
   &__img {
@@ -99,6 +98,8 @@
   }
 
   &__info {
+    padding-top: 24px;
+
     p {
       margin-bottom: 14px;
       font-weight: 500;
@@ -412,9 +413,5 @@
         @include mb(7px);
       }
     }
-  }
-
-  .services-tabs {
-
   }
 }

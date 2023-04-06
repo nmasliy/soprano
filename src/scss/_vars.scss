@@ -2,6 +2,7 @@
 :root {
   --content-width: 1240px;
   --container-offset: 15px;
+  --header-height: 73px;
   --container-width: calc(var(--content-width) + var(--container-offset) * 2);
 }
 

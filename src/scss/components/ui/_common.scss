@@ -228,6 +228,12 @@
 }
 
 @media screen and (max-width: 570px) {
+  .scroll-top {
+    width: 35px;
+    height: 35px;
+    background-size: 18px;
+  }
+
   .section {
     &__counter {
       font-size: 13px;

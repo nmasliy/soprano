@@ -88,15 +88,19 @@
     align-items: center;
     outline: transparent;
     border: none;
+    padding: 0;
     box-shadow: none;
     font-size: 11px;
     color: #6f6f72;
     background: 0;
-    transition: border $transition;
     cursor: pointer;
 
     span {
-      margin-right: 6px;
+      margin-right: 10px;
+    }
+
+    @include hover {
+      text-decoration: underline;
     }
   }
 
@@ -127,8 +131,47 @@
   }
 
   &__icon {
-    @include icon(50px);
+    @include icon(54px);
 
     margin: 0 auto 14px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .modal-thanks {
+    &__icon {
+      @include icon(52px);
+    }
+
+    &__head p {
+      margin-bottom: 17px;
+    }
+  }
+
+  .modal {
+    &__inner {
+      padding: 52px 16px;
+    }
+
+    &__subtitle {
+      margin: 0 auto 24px;
+      max-width: 241px;
+    }
+
+    &__title {
+      margin: 0 auto 6px;
+      max-width: 241px;
+      font-size: 26px;
+    }
+
+    &__top-decor {
+      font-size: 14px;
+
+      &::after {
+        width: 22px;
+        height: 10px;
+        background-size: cover;
+      }
+    }
   }
 }
