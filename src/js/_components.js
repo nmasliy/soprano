@@ -1,3 +1,4 @@
+import './components/webp';
 import './components/menu';
 import './components/scroll';
 import './components/tabs';

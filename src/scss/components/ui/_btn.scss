@@ -2,6 +2,7 @@
   $transition: 0.25s ease-out;
 
   position: relative;
+  z-index: 0;
   display: inline-block;
   overflow: hidden;
   outline: none;
@@ -33,7 +34,6 @@
 
   &__wrapper {
     display: block;
-    overflow: hidden;
     border-radius: 12px;
     padding: 18px 40px;
     background: #fff;

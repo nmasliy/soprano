@@ -1,10 +1,15 @@
+.webp .benefits__inner {
+  background: url("../img/benefits-bg.webp") center / cover no-repeat;
+  background-color: #e9f0f2;
+}
+
 .benefits {
   padding: 50px 0;
 
   &__inner {
     border-radius: 24px;
     padding: 90px 50px;
-    background: url("../img/benefits-bg.png") center / cover no-repeat;
+    background: url("../img/benefits-bg.jpg") center / cover no-repeat;
     background-color: #e9f0f2;
   }
 
@@ -140,6 +145,20 @@
         height: auto;
         max-height: 200px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .webp .benefits__inner {
+    background: url("../img/benefits-bg-mobile.webp") center / cover no-repeat;
+    background-color: #e9f0f2;
+  }
+
+  .benefits {
+    &__inner {
+      background: url("../img/benefits-bg-mobile.jpg") center / cover no-repeat;
+      background-color: #e9f0f2;
     }
   }
 }
