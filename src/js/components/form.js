@@ -11,7 +11,6 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-
 const formBtn = document.querySelector('.form__btn');
 const nameInput = document.querySelector('.form__input--name');
 const phoneInput = document.querySelector('.form__input--tel');

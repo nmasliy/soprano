@@ -35,9 +35,6 @@
   }
 
   &__line {
-    position: relative;
-    display: flex;
-    flex-direction: column;
     animation: move-down 25s linear infinite;
 
     &--inverse {
@@ -47,11 +44,6 @@
     @include hover {
       animation-play-state: paused;
     }
-  }
-
-  &__col {
-    display: flex;
-    flex-direction: column;
   }
 
   &__item {
@@ -77,21 +69,21 @@
 
 @keyframes move-down {
   0% {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, -100%, 0);
   }
 
   100% {
-    transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, 35%, 0);
   }
 }
 
 @keyframes move-left {
   0% {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(-150%, 0, 0);
   }
 
   100% {
-    transform: translate3d(-50%, 0, 0);
+    transform: translate3d(100%, 0, 0);
   }
 }
 
@@ -116,11 +108,12 @@
     &__item {
       @include mr(8px);
 
+      flex-shrink: 0;
       margin-bottom: 0;
-      width: 220px;
+      animation: move-left 25s linear infinite;
 
       img {
-        width: 100%;
+        width: 220px;
       }
 
       &:focus,
@@ -129,18 +122,12 @@
       }
     }
 
-    &__col {
-      @include mr(8px);
-
-      flex-direction: row;
-    }
-
     &__line {
       @include mb(7px);
 
-      flex-direction: row;
-      width: max-content;
-      animation: move-left 18s linear infinite;
+      display: flex;
+      flex-wrap: nowrap;
+      animation: none;
 
       &:focus,
       &:active {
@@ -148,7 +135,7 @@
       }
 
       &--inverse {
-        animation: move-left 24s linear infinite reverse;
+        animation: move-left 30s linear infinite reverse;
       }
     }
 
@@ -174,7 +161,9 @@
 @media screen and (max-width: 570px) {
   .certificates {
     &__item {
-      width: 140px;
+      img {
+        width: 134px;
+      }
     }
 
     &__text {
