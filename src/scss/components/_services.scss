@@ -67,6 +67,7 @@
 
     img {
       width: 100%;
+      min-height: 120px;
     }
 
     &:first-child {
@@ -250,11 +251,9 @@
 
     @include hover {
       &:not(.is-active) .services-tabs__name {
-        border-color: #fff;
-        color: #41404e;
-        background-color: #f0f6f9;
+        border-color: rgba(255, 255, 255, 20%);
 
-        &::after {
+        &::before {
           opacity: 1;
         }
       }
@@ -271,7 +270,8 @@
     transition: 0.3s;
     cursor: pointer;
 
-    &::after {
+    &::after,
+    &::before {
       content: "";
       position: absolute;
       right: 20px;
@@ -279,11 +279,19 @@
       border-radius: 50%;
       width: 21px;
       height: 21px;
-      background: url("../img/arrow-right-white-icon.svg") center no-repeat;
-      background-color: #08080d;
       opacity: 0;
       transform: translateY(-50%);
       transition: $transition;
+    }
+
+    &::before {
+      background: url("../img/arrow-right-icon-2.svg") center no-repeat;
+      background-color: $accent-color;
+    }
+
+    &::after {
+      background: url("../img/arrow-right-white-icon.svg") center no-repeat;
+      background-color: #08080d;
     }
   }
 }
@@ -375,7 +383,6 @@
       &::after {
         width: 26px;
         height: 26px;
-        background-size: cover;
         opacity: 1;
       }
     }

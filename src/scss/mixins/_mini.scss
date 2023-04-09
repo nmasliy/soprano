@@ -85,3 +85,11 @@
     }
   }
 }
+
+@mixin icon-hover {
+  transition: transform $transition;
+
+  @include hover {
+    transform: scale(0.95);
+  }
+}

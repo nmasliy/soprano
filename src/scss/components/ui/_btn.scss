@@ -32,6 +32,16 @@
     transition: 0.3s cubic-bezier(0, 0, 0.215, 0.975);
   }
 
+  &.is-disabled {
+    pointer-events: none;
+    touch-action: none;
+    user-select: none;
+
+    &::before {
+      background: #3f3f3f;
+    }
+  }
+
   &__wrapper {
     display: block;
     border-radius: 12px;

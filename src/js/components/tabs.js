@@ -1,9 +1,10 @@
 import { initTabs } from '../functions/tabs';
 
-initTabs('.services-tabs__item', '.services__tab-content');
 
 if (window.innerWidth <= 1024) {
   initMobileServices();
+} else {
+  initTabs('.services-tabs__item', '.services__tab-content');
 }
 
 function initMobileServices() {
@@ -16,5 +17,10 @@ function initMobileServices() {
     );
 
     el.insertAdjacentElement('beforeend', content);
+
+    el.addEventListener('click', function() {
+      el.classList.toggle('is-active');
+      content.classList.toggle('is-active');
+    })
   });
 }

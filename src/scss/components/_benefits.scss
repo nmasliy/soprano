@@ -53,6 +53,7 @@
 
   &__icon {
     @include icon;
+    @include icon-hover;
 
     margin-right: 14px;
     margin-bottom: 14px;

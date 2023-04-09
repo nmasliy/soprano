@@ -3,7 +3,7 @@
   left: 0;
   top: 0;
   z-index: 4;
-  padding: 15px 0;
+  padding: 10px 0;
   width: 100%;
   color: $black-color;
   background: #d9e8f5;
@@ -150,7 +150,8 @@
     left: 0;
     top: 0;
     width: 100%;
-    background: rgba(217, 232, 245, 50%);
+    background: rgba(217, 232, 245, 70%);
+    backdrop-filter: blur(7.5px);
   }
 
   &__left,

@@ -105,6 +105,8 @@
   }
 
   &__avatar {
+    @include icon-hover;
+
     flex-shrink: 0;
     margin-right: 10px;
 
@@ -142,14 +144,29 @@
   }
 
   &__more {
+    position: relative;
+    display: inline-block;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.7;
     text-align: right;
     color: #08080d;
 
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background-color: #08080d;
+      transition: width $transition;
+    }
+
     @include hover {
-      text-decoration: underline;
+      &::before {
+        width: 100%;
+      }
     }
   }
 }
