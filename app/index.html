@@ -149,8 +149,8 @@
   <div class="container">
     <div class="hero__inner">
       <div class="hero__box">
-        <h1 class="hero__title"><span class="color-orange">Безболісне лікування</span><span
-            class="color-orange hide-tablet">,</span><span class="show-tablet"> зубiв,</span>
+        <h1 class="hero__title"><span class="color-orange">Безболісне <span class="show-mobile-block"></span>
+            лікування</span><span class="color-orange hide-tablet">,</span><span class="show-tablet"> зубiв,</span>
           імплантація, чистка
           і&nbsp;вирівнювання <span class="hide-tablet">зубів</span></h1>
         <p class="hero__text">Спеціалісти з досвідом більше 10 років</p>
@@ -173,29 +173,34 @@
         <div class="hero__img">
           <div class="hero__decor--1 decor-icon">
             <picture>
-              <source srcset="img/hero-decor-1.webp 1x, img/hero-decor-1@2x.webp 2x" type="image/webp">
-              <img src="img/hero-decor-1.png" srcset="img/hero-decor-1.png 1x, img/hero-decor-1@2x.png 2x" width="89"
+              <source srcset="img/hero-decor-1.webp 1x, img/hero-decor-1.webp 2x" type="image/webp">
+              <img src="img/hero-decor-1.png" srcset="img/hero-decor-1.png 1x, img/hero-decor-1.png 2x" width="89"
                 height="89" alt="">
             </picture>
           </div>
           <div class="hero__decor--2 decor-icon">
             <picture>
-              <source srcset="img/hero-decor-2.webp 1x, img/hero-decor-2@2x.webp 2x" type="image/webp">
-              <img src="img/hero-decor-2.png" srcset="img/hero-decor-2.png 1x, img/hero-decor-2@2x.png 2x" width="100"
+              <source srcset="img/hero-decor-2.webp 1x, img/hero-decor-2.webp 2x" type="image/webp">
+              <img src="img/hero-decor-2.png" srcset="img/hero-decor-2.png 1x, img/hero-decor-2.png 2x" width="100"
                 height="100" alt="">
             </picture>
           </div>
           <div class="hero__decor--3 decor-icon show-tablet-block">
             <picture>
-              <source srcset="img/hero-decor-3.webp 1x, img/hero-decor-3@2x.webp 2x" type="image/webp">
-              <img src="img/hero-decor-3.png" srcset="img/hero-decor-3.png 1x, img/hero-decor-3@2x.png 2x" width="60"
+              <source srcset="img/hero-decor-3.webp 1x, img/hero-decor-3.webp 2x" type="image/webp">
+              <img src="img/hero-decor-3.png" srcset="img/hero-decor-3.png 1x, img/hero-decor-3.png 2x" width="60"
                 height="60" alt="">
             </picture>
           </div>
-          <picture>
+          <picture class="hide-mobile">
             <source srcset="img/hero-1.webp 1x, img/hero-1@2x.webp 2x" type="image/webp">
             <img src="img/hero-1.jpg" srcset="img/hero-1.jpg 1x, img/hero-1@2x.jpg 2x" width="611" height="483"
               alt="Main image">
+          </picture>
+          <picture class="show-mobile-flex">
+            <source srcset="img/hero-1-mobile.webp 1x, img/hero-1-mobile@2x.webp 2x" type="image/webp">
+            <img src="img/hero-1-mobile.jpg" srcset="img/hero-1-mobile.jpg 1x, img/hero-1-mobile@2x.jpg 2x" width="204"
+              height="208" alt="Main image">
           </picture>
         </div>
       </div>
@@ -268,10 +273,15 @@
       <div class="hero__box">
         <div class="hero__images">
           <div class="hero__img">
-            <picture>
+            <picture class="hide-mobile">
               <source srcset="img/hero-2.webp 1x, img/hero-2@2x.webp 2x" type="image/webp">
               <img src="img/hero-2.jpg" srcset="img/hero-2.jpg 1x, img/hero-2@2x.jpg 2x" width="295" height="172"
                 alt="hero image">
+            </picture>
+            <picture class="show-mobile-flex">
+              <source srcset="img/hero-2-mobile.webp 1x, img/hero-2-mobile@2x.webp 2x" type="image/webp">
+              <img src="img/hero-2-mobile.jpg" srcset="img/hero-2-mobile.jpg 1x, img/hero-2-mobile@2x.jpg 2x"
+                width="135" height="100" alt="Main image">
             </picture>
           </div>
           <div class="hero__img">
@@ -282,10 +292,15 @@
                   height="94" alt="">
               </picture>
             </div>
-            <picture>
+            <picture class="hide-mobile">
               <source srcset="img/hero-3.webp 1x, img/hero-3@2x.webp 2x" type="image/webp">
               <img src="img/hero-3.jpg" srcset="img/hero-3.jpg 1x, img/hero-3@2x.jpg 2x" width="295" height="172"
                 alt="hero image">
+            </picture>
+            <picture class="show-mobile-flex">
+              <source srcset="img/hero-3-mobile.webp 1x, img/hero-3-mobile@2x.webp 2x" type="image/webp">
+              <img src="img/hero-3-mobile.jpg" srcset="img/hero-3-mobile.jpg 1x, img/hero-3-mobile@2x.jpg 2x"
+                width="135" height="100" alt="Main image">
             </picture>
           </div>
         </div>
@@ -600,7 +615,7 @@
 						<div class="services__footer">
 							<div class="services__price">
 								<div class="services__price-caption">Ціна:</div>
-								<div class="services__price-value">від <span>2500</span> грн</div>
+								<div class="services__price-value">від <span>2100</span> грн</div>
 							</div>
 							<button class="services__btn btn btn--accent btn--sm" data-modal-open="modal-form">
 								<span class="btn__wrapper">
@@ -656,7 +671,7 @@
 						<div class="services__footer">
 							<div class="services__price">
 								<div class="services__price-caption">Ціна:</div>
-								<div class="services__price-value">від <span>2500</span> грн</div>
+								<div class="services__price-value"><span>7500</span> грн</div>
 							</div>
 							<button class="services__btn btn btn--accent btn--sm" data-modal-open="modal-form">
 								<span class="btn__wrapper">
@@ -704,7 +719,7 @@
 						<div class="services__footer">
 							<div class="services__price">
 								<div class="services__price-caption">Ціна:</div>
-								<div class="services__price-value">від <span>9900</span> грн</div>
+								<div class="services__price-value">від <span>9500</span> грн</div>
 							</div>
 							<button class="services__btn btn btn--accent btn--sm" data-modal-open="modal-form">
 								<span class="btn__wrapper">
@@ -740,8 +755,9 @@
 								<div class="services__img-caption">Пiсля</div>
 								<picture>
 									<source srcset="img/services-10.webp 1x, img/services-10@2x.webp 2x" type="image/webp">
-									<img loading="lazy" src="img/services-10.jpg" srcset="img/services-10.jpg 1x, img/services-10@2x.jpg 2x"
-										width="338" height="175" alt="Фото Пiсля">
+									<img loading="lazy" src="img/services-10.jpg"
+										srcset="img/services-10.jpg 1x, img/services-10@2x.jpg 2x" width="338" height="175"
+										alt="Фото Пiсля">
 								</picture>
 							</div>
 						</div>
@@ -756,7 +772,7 @@
 						<div class="services__footer">
 							<div class="services__price">
 								<div class="services__price-caption">Ціна:</div>
-								<div class="services__price-value">від <span>390</span> євро</div>
+								<div class="services__price-value">від <span>10000</span> євро</div>
 							</div>
 							<button class="services__btn btn btn--accent btn--sm" data-modal-open="modal-form">
 								<span class="btn__wrapper">
@@ -779,13 +795,13 @@
 						<div class="services__caption"><b>Гарантуємо, що процедура пройде без болю завдяки досвідченості
 								наших&nbsp;лікарів
 								та знеболюючим препаратам глибокої дії.</b></div>
-							<div class="services__img">
-								<picture>
-									<source srcset="img/services-11.webp 1x, img/services-11@2x.webp 2x" type="image/webp">
-									<img loading="lazy" src="img/services-11.jpg" srcset="img/services-11.jpg 1x, img/services-11@2x.jpg 2x"
-										width="676" height="175" alt="Фото">
-								</picture>
-							</div>
+						<div class="services__img">
+							<picture>
+								<source srcset="img/services-11.webp 1x, img/services-11@2x.webp 2x" type="image/webp">
+								<img loading="lazy" src="img/services-11.jpg" srcset="img/services-11.jpg 1x, img/services-11@2x.jpg 2x"
+									width="676" height="175" alt="Фото">
+							</picture>
+						</div>
 						<div class="services__info">
 							<div class="services__info-title">Коли потрібно видаляти зуби мудрості:</div>
 							<ol class="services__steps">
@@ -805,7 +821,7 @@
 						<div class="services__footer">
 							<div class="services__price">
 								<div class="services__price-caption">Ціна:</div>
-								<div class="services__price-value">від <span>2500</span> грн</div>
+								<div class="services__price-value">від <span>2600</span> грн</div>
 							</div>
 							<button class="services__btn btn btn--accent btn--sm" data-modal-open="modal-form">
 								<span class="btn__wrapper">
@@ -833,16 +849,17 @@
 								<div class="services__img-caption">До</div>
 								<picture>
 									<source srcset="img/services-12.webp 1x, img/services-12@2x.webp 2x" type="image/webp">
-									<img loading="lazy" src="img/services-12.jpg" srcset="img/services-12.jpg 1x, img/services-12@2x.jpg 2x"
-										width="338" height="175" alt="Фото до">
+									<img loading="lazy" src="img/services-12.jpg"
+										srcset="img/services-12.jpg 1x, img/services-12@2x.jpg 2x" width="338" height="175" alt="Фото до">
 								</picture>
 							</div>
 							<div class="services__img">
 								<div class="services__img-caption">Пiсля</div>
 								<picture>
 									<source srcset="img/services-13.webp 1x, img/services-13@2x.webp 2x" type="image/webp">
-									<img loading="lazy" src="img/services-13.jpg" srcset="img/services-13.jpg 1x, img/services-13@2x.jpg 2x"
-										width="338" height="175" alt="Фото Пiсля">
+									<img loading="lazy" src="img/services-13.jpg"
+										srcset="img/services-13.jpg 1x, img/services-13@2x.jpg 2x" width="338" height="175"
+										alt="Фото Пiсля">
 								</picture>
 							</div>
 						</div>
@@ -860,7 +877,7 @@
 						<div class="services__footer">
 							<div class="services__price">
 								<div class="services__price-caption">Ціна:</div>
-								<div class="services__price-value"></div>
+								<div class="services__price-value">від <span>2100</span> грн</div>
 							</div>
 							<button class="services__btn btn btn--accent btn--sm" data-modal-open="modal-form">
 								<span class="btn__wrapper">
@@ -878,7 +895,6 @@
 							</button>
 						</div>
 					</div>
-
 					<div class="services__tab-content" data-tab="8">
 						<h4 class="services__subtitle">Елайнери</h4>
 						<div class="services__caption"><b>Застосовуються для виправлення прикусу, усунення міжзубного простору
@@ -888,23 +904,24 @@
 								<div class="services__img-caption">До</div>
 								<picture>
 									<source srcset="img/services-14.webp 1x, img/services-14@2x.webp 2x" type="image/webp">
-									<img loading="lazy" src="img/services-14.jpg" srcset="img/services-14.jpg 1x, img/services-14@2x.jpg 2x"
-										width="338" height="175" alt="Фото до">
+									<img loading="lazy" src="img/services-14.jpg"
+										srcset="img/services-14.jpg 1x, img/services-14@2x.jpg 2x" width="338" height="175" alt="Фото до">
 								</picture>
 							</div>
 							<div class="services__img">
 								<div class="services__img-caption">Пiсля</div>
 								<picture>
 									<source srcset="img/services-15.webp 1x, img/services-15@2x.webp 2x" type="image/webp">
-									<img loading="lazy" src="img/services-15.jpg" srcset="img/services-15.jpg 1x, img/services-15@2x.jpg 2x"
-										width="338" height="175" alt="Фото Пiсля">
+									<img loading="lazy" src="img/services-15.jpg"
+										srcset="img/services-15.jpg 1x, img/services-15@2x.jpg 2x" width="338" height="175"
+										alt="Фото Пiсля">
 								</picture>
 							</div>
 						</div>
 						<div class="services__footer">
 							<div class="services__price">
 								<div class="services__price-caption">Ціна:</div>
-								<div class="services__price-value"></div>
+								<div class="services__price-value">від <span>118000</span> грн</div>
 							</div>
 							<button class="services__btn btn btn--accent btn--sm" data-modal-open="modal-form">
 								<span class="btn__wrapper">
@@ -927,23 +944,13 @@
 						<div class="services__caption"><b>Найефективніший спосіб вирівняти зуби і&nbsp;прикус. Добре тримаються
 								на&nbsp;зубах. Встановлюються на&nbsp;зовнішню сторону зубів та&nbsp;забезпечують сильний механічний
 								вплив.</b></div>
-						<div class="services__images">
-							<div class="services__img">
-								<div class="services__img-caption">До</div>
-								<picture>
-									<source srcset="img/services-16.webp 1x, img/services-16@2x.webp 2x" type="image/webp">
-									<img loading="lazy" src="img/services-16.jpg" srcset="img/services-16.jpg 1x, img/services-16@2x.jpg 2x"
-										width="338" height="175" alt="Фото до">
-								</picture>
-							</div>
-							<div class="services__img">
-								<div class="services__img-caption">Пiсля</div>
-								<picture>
-									<source srcset="img/services-17.webp 1x, img/services-17@2x.webp 2x" type="image/webp">
-									<img loading="lazy" src="img/services-17.jpg" srcset="img/services-17.jpg 1x, img/services-17@2x.jpg 2x"
-										width="338" height="175" alt="Фото Пiсля">
-								</picture>
-							</div>
+						<div class="services__img">
+							<div class="services__img-caption">До</div>
+							<picture>
+								<source srcset="img/services-16.webp 1x, img/services-16@2x.webp 2x" type="image/webp">
+								<img loading="lazy" src="img/services-16.jpg" srcset="img/services-16.jpg 1x, img/services-16@2x.jpg 2x"
+									width="338" height="175" alt="Фото до">
+							</picture>
 						</div>
 						<div class="services__info">
 							<div class="services__info-title">Найчастіші випадки, коли потрібно виправляти прикус та&nbsp;ставити
@@ -957,7 +964,7 @@
 						<div class="services__footer">
 							<div class="services__price">
 								<div class="services__price-caption">Ціна:</div>
-								<div class="services__price-value"></div>
+								<div class="services__price-value">від <span>22500</span> грн</div>
 							</div>
 							<button class="services__btn btn btn--accent btn--sm" data-modal-open="modal-form">
 								<span class="btn__wrapper">
@@ -1179,7 +1186,7 @@
 					</li>
 					<li class="works__item animate-show-up">
 						<div class="works__item-head">
-							<div class="works__name">Тотальне
+							<div class="works__name">Тотальне <br>
 								протезування</div>
 							<div class="works__doctors">
 								<div class="works__doctors-caption">Лікарі</div>
@@ -2200,7 +2207,7 @@
 						<input type="text" class="form__input form__input--name" placeholder="Ваше прізвище та ім’я">
 					</label>
 					<label class="form__item">
-						<input type="tel" class="form__input form__input--tel input-reset" placeholder="Телефон">
+						<input type="tel" class="form__input form__input--tel input-reset" value="+(38)" placeholder="Телефон">
 					</label>
 				</div>
 				<button class="form__btn btn">

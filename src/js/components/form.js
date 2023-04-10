@@ -15,7 +15,7 @@ const formBtn = document.querySelector('.form__btn');
 const nameInput = document.querySelector('.form__input--name');
 const phoneInput = document.querySelector('.form__input--tel');
 
-const im = Inputmask({"mask": "+(38) 999-99-99-999"}).mask(phoneInput);
+const im = Inputmask({"mask": "+(99) 999-99-99-999"}).mask(phoneInput);
 
 let phoneValid = false;
 let nameValid = false;

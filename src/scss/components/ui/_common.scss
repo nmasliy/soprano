@@ -173,9 +173,12 @@
   color: $orange-color;
 }
 
+.show-mobile-flex,
+.show-mobile-block,
 .show-tablet,
-.show-tablet-block {
-  display: none;
+.show-tablet-block,
+.show-tablet-flex {
+  display: none !important;
 }
 
 .slider-pagination {
@@ -211,15 +214,19 @@
 
 @media screen and (max-width: 1024px) {
   .show-tablet-block {
-    display: block;
+    display: block !important;
+  }
+
+  .show-tablet-flex {
+    display: flex !important;
   }
 
   .show-tablet {
-    display: initial;
+    display: initial !important;
   }
 
   .hide-tablet {
-    display: none;
+    display: none !important;
   }
 
   .section {
@@ -232,6 +239,22 @@
 }
 
 @media screen and (max-width: 570px) {
+  :root {
+    --header-height: 53px;
+  }
+
+  .show-mobile-block {
+    display: block !important;
+  }
+
+  .show-mobile-flex {
+    display: flex !important;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+
   .scroll-top {
     right: 20px;
     bottom: 20px;

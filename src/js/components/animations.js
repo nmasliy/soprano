@@ -27,6 +27,19 @@ function initAnimations() {
       }
     );
   });
+
+  const starsBox = document.querySelector('.reviews__decor-stars');
+
+  function startStarsAnimation() {
+    setTimeout(() => {
+      starsBox.classList.add('is-animated')
+    }, 400)
+  }
+  
+  ScrollTrigger.create({
+    trigger: '.reviews__inner',
+    onEnter: startStarsAnimation,
+  });
 }
 
 initAnimations();

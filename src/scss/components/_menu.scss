@@ -17,6 +17,14 @@
     opacity: 0;
     transition: $menu-transition;
 
+    &::before {
+      @include bg-circle;
+
+      left: -148px;
+      top: 111px;
+      z-index: -1;
+    }
+
     &__logo picture {
       display: flex;
     }
