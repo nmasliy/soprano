@@ -30,7 +30,7 @@
     border-radius: 16px;
     padding: 50px 80px;
     width: 100%;
-    max-width: 552px;
+    max-width: 595px;
     max-height: 100%;
     background: #fff;
   }
@@ -150,7 +150,8 @@
 
   .modal {
     &__inner {
-      padding: 52px 16px;
+      padding: 52px 16px 30px;
+      max-width: 480px;
     }
 
     &__subtitle {
