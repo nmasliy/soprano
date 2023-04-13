@@ -55,6 +55,7 @@
 
   &__bottom {
     display: grid;
+    align-items: center;
     grid-template-columns: 2.7fr 1fr 1fr 1fr;
     font-size: 12px;
     line-height: 1.5;

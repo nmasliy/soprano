@@ -27,7 +27,7 @@ if (phoneValid && nameValid) {
 }
 
 nameInput.addEventListener('input', (e) => {
-  const regex = /[^A-Za-zА-Яа-яЁёЇїІіЄєҐґ']/gi;
+  const regex = /[^A-Za-zА-Яа-яЁёЇїІіЄєҐґ ']/gi;
 
   nameInput.value = e.target.value.replace(regex, '');
 
