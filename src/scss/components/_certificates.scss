@@ -173,6 +173,10 @@
 
 @media screen and (max-width: 570px) {
   .certificates {
+    &__title {
+      margin-bottom: 8px;
+    }
+
     &__item {
       width: 140px;
     }

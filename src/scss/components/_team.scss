@@ -363,3 +363,16 @@
     }
   }
 }
+
+@media screen and (max-width: 475px) {
+  .team__name {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .team__name {
+    padding-right: 5px;
+    width: min-content;
+  }
+}

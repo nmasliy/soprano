@@ -39,6 +39,7 @@ function initAnimations() {
   ScrollTrigger.create({
     trigger: '.reviews__inner',
     onEnter: startStarsAnimation,
+    onUpdate: startStarsAnimation,
   });
 }
 
