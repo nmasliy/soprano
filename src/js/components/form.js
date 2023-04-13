@@ -1,16 +1,6 @@
 import Inputmask from 'inputmask';
 
 const form = document.querySelector('.form');
-
-form.addEventListener('submit', (e) => {
-  if (phoneValid && nameValid) {
-    e.preventDefault();
-    sendForm(e);
-  } else {
-    e.preventDefault();
-  }
-});
-
 const formBtn = document.querySelector('.form__btn');
 const nameInput = document.querySelector('.form__input--name');
 const phoneInput = document.querySelector('.form__input--tel');
@@ -56,6 +46,25 @@ phoneInput.addEventListener('input', (e) => {
   }
 });
 
+form.addEventListener('submit', (e) => {
+  if (phoneValid && nameValid) {
+    e.preventDefault();
+    sendForm(e);
+  } else {
+    e.preventDefault();
+  }
+});
+
+const hiddenInput = document.querySelector('#application-from');
+
+document.body.addEventListener('click', (e) => {
+  const openTrigger = e.target.closest('[data-modal-open]');
+  if (openTrigger) {
+    hiddenInput.value = openTrigger.dataset.form;
+  }
+})
+
+
 function sendForm(ev) {
   modals.closeAll();
   
@@ -78,3 +87,4 @@ function sendForm(ev) {
 
   ev.target.reset();
 }
+
