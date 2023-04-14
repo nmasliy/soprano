@@ -18,9 +18,11 @@ function initMobileServices() {
 
     el.insertAdjacentElement('beforeend', content);
 
-    el.addEventListener('click', function() {
-      el.classList.toggle('is-active');
-      content.classList.toggle('is-active');
+    el.addEventListener('click', function(e) {
+      if (e.target.closest('.services-tabs__name')) {
+        el.classList.toggle('is-active');
+        content.classList.toggle('is-active');
+      }
     })
   });
 }

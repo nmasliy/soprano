@@ -252,8 +252,7 @@
 @media screen and (max-width: 570px) {
   .hero {
     &__benefits-wrapper {
-      overflow: hidden;
-      margin-right: -15px;
+      overflow: visible;
       height: 66px;
     }
   }
