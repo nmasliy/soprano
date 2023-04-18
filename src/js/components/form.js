@@ -47,11 +47,10 @@ phoneInput.addEventListener('input', (e) => {
 });
 
 form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
   if (phoneValid && nameValid) {
-    e.preventDefault();
     sendForm(e);
-  } else {
-    e.preventDefault();
   }
 });
 
@@ -69,15 +68,13 @@ function sendForm(ev) {
   modals.closeAll();
   
   let formData = new FormData(ev.target);
-
+  
   let xhr = new XMLHttpRequest();
-
+  
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
       if (xhr.status === 200) {
-        setTimeout(() => {
-          modals.open('modal-thanks');
-        }, 700);
+        window.location.href = ev.target.dataset.thanks;
       }
     }
   };
