@@ -23,7 +23,14 @@ function initMobileSlider(parent, wrapper, items, breakpoint = 1024, options) {
   }
 }
 
-initMobileSlider('.hero__benefits-wrapper', '.hero-benefits', '.hero-benefits__item', 570);
+// initMobileSlider('.hero__benefits-wrapper', '.hero-benefits', '.hero-benefits__item', 570, {
+//   slidesPerView: 'auto',
+//   spaceBetween: 10,
+//   speed: 1000,
+//   autoplay: {
+//     delay: 2000
+//   }
+// });
 initMobileSlider('.equip__list-wrapper', '.equip__list', '.equip__item', 1240, {
   slidesPerView: 'auto',
   spaceBetween: 12,

@@ -41,6 +41,10 @@
 
   &__btn {
     margin-bottom: 30px;
+
+    &::before {
+      background-color: $orange-color;
+    }
   }
 
   &__images {
@@ -250,21 +254,16 @@
 }
 
 @media screen and (max-width: 570px) {
-  .hero {
-    &__benefits-wrapper {
-      overflow: visible;
-      height: 66px;
-    }
-  }
-
   .hero-benefits {
+    display: block;
+    padding: 12px;
+
     &__item {
+      margin-bottom: 12px;
       border: 1px solid #fff;
       border-radius: 12px;
       padding: 12px;
       width: auto;
-      min-width: 265px;
-      max-width: 300px;
       box-sizing: border-box;
       background: rgba(255, 255, 255, 70%);
     }

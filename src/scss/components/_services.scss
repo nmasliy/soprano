@@ -25,6 +25,12 @@
     background: rgba(246, 249, 250, 8%);
   }
 
+  &__btn {
+    &::before {
+      background-color: $orange-color;
+    }
+  }
+
   &__tab-content {
     display: none;
     flex-direction: column;

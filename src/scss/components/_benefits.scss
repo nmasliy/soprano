@@ -109,16 +109,6 @@
       display: block;
       margin: 0 auto;
       max-width: 500px;
-
-      &.is-active {
-        .benefits__btn {
-          display: none;
-        }
-
-        .benefits__col:nth-child(2) ~ .benefits__col {
-          display: flex;
-        }
-      }
     }
 
     &__col {
@@ -126,10 +116,6 @@
 
       &:nth-child(2) {
         flex-direction: column-reverse;
-
-        ~ .benefits__col {
-          display: none;
-        }
       }
     }
 
